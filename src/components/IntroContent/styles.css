@@ -1,0 +1,13 @@
+.outer {
+    background-color: white!important;
+    padding-top: 70px!important;
+    padding-bottom: 70px!important;
+    text-align: center;
+}
+.inner {
+    padding-top: 5px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}

@@ -1,0 +1,22 @@
+.int-wrap {
+    display: block;
+    width: 100%;
+  }
+  
+  .int-grid {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    width: 70%;
+    margin: auto;
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
+    }
+    @media only screen and (max-width: 760px) {
+        .int-grid {
+            grid-template-columns: 100%;
+            width: 90%;
+            margin: auto;
+            grid-gap: 20px;
+        }
+    }

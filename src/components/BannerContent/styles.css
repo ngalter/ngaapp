@@ -1,0 +1,32 @@
+.banner-wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    grid-template-columns: 100%;
+    width: 100%;
+    height: 400px;
+    margin-top: -40px!important;
+    z-index: 1;
+ 
+  }
+
+  .bg-bkd {
+    background-image:
+    linear-gradient(155deg, rgb(0, 8, 51), rgba(28, 88, 255, 0)),
+    url("../img/code.jpg");
+    z-index: 1;
+  }
+
+  .banner-container {
+       display: grid;
+       width: 100%;
+       height: auto;
+       grid-template-columns: 100%;
+     }
+     .banner-container > div {
+       color: white;
+       text-align: center;
+       margin: auto!important;
+     }

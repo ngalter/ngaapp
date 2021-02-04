@@ -1,0 +1,17 @@
+.myheader {
+    color: #cc6600!important;
+    font-weight: 700!important;
+    font-size: 1.8em!important;
+}
+.myheader a:link {
+    color: #cc6600!important;
+    text-decoration: none;
+}
+.myheader a:hover {
+    text-decoration: underline;
+}
+.media1 {
+    padding-top: 56.25%;
+    object-fit: contain;
+    
+}

@@ -1,0 +1,23 @@
+type Card @model {
+  id: ID!
+  title: String!
+  text: String
+  url: String
+  icon: String
+  img: String
+  order: Int
+}
+type Banner @model {
+  id: ID!
+  title: String
+  text: String
+  img: String
+  bkd: String
+}
+type About @model {
+  id: ID!
+  title: String
+  text: String
+  img: String
+}
+

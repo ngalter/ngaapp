@@ -1,0 +1,24 @@
+{
+    "interest": 
+[
+    {
+        "header": "React Framework",
+        "text": "I create custom websites using React, a JavaScript framework. I use React for mobile and progressive web apps.",
+        "icon": "fab fa-react"
+    },
+    {
+        "header": "WordPress",
+        "text": "I design, develop and maintain WordPress websites.  I rescue old, out-of-date Wordpress sites and bring them up to date or migrate them to new sites.",
+        "icon": "fab fa-wordpress"
+
+    },
+    {
+        "header": "CDN",
+        "text": "I increase performance and improve security with Content Delivery Networks.  A CDN provides low latency and secure data distribution.",  
+        "icon": "fas fa-cloud"
+    }
+]
+}
+
+
+  

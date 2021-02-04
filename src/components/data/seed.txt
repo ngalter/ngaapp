@@ -1,0 +1,311 @@
+mutation MyMutation {
+  createCharity(
+    input: {
+    name: "Jewish Family & Children\"'s Service",
+    img: "../img/jfcs.png",
+    url: "https://www.jfcsonline.org/",
+    icon: "fas fa-heart",
+    order: 1
+    }) {
+    id
+  }
+}
+mutation MyMutation {
+  createCharity(
+    input: {
+    name: "Trenton Area Soup Kitchen",
+    img: "../img/task.png",
+    url: "https://www.trentonsoupkitchen.org/",
+    icon: "fas fa-heart",
+    order: 2
+    }) {
+    id
+  }
+}
+mutation MyMutation {
+  createCharity(
+    input: {
+    name: "RISE Community Partnership",
+    img: "../img/rise.png",
+    url: "https://www.njrise.org/",
+    icon: "fas fa-heart",
+    order: 3
+    }) {
+    id
+  }
+}
+mutation MyMutation {
+  createCharity(
+    input: {
+    name: "Catholic Charities Diocese of Trenton",
+    img: "../img/cc.png",
+    url: "https://www.catholiccharitiestrenton.org/",
+    icon: "fas fa-heart",
+    order: 4
+    }) {
+    id
+  }
+}
+mutation MyMutation {
+  createCharity(
+    input: {
+    name: "Mercer Street Friends Food Bank",
+    img: "../img/msf.png",
+    url: "https://mercerstreetfriends.org/food-bank/",
+    icon: "fas fa-heart",
+    order: 5
+    }) {
+    id
+  }
+}
+
+mutation MyMutation {
+  createInfo(
+    input: {
+        header: "DIGITAL RACE BIBS",
+        text: "We may not all be able to gather on Thanksgiving morning to run together as usual, but you'll still have an individualized bib with your race number!  Once you've registered, be sure to download your virtual bib.  You will need your bib number to enter your race results. You can also share your bib on social media and/or print it out to wear during the race.",
+        url: "https://help.runsignup.com/support/solutions/articles/17000102847-view-digital-bib",
+        icon: "fas fa-barcode",
+        img: "../img/bib.jpg",
+        video: "",
+        order: 1
+    }) {
+    id
+  }
+}
+
+mutation MyMutation {
+  createInfo(
+    input: {
+        header: "MAP YOUR COURSE",
+        text: "Looking for a tool to help you set your own 5K or 1-mile course for this year's run?  We recommend Map My Run, which will enable you to create your own route or choose from popular nearby routes as you plan and train.  On Race Day, use any of your smart devices along with the app to track your route progress and time.",
+        url: "https://www.mapmyrun.com/routes/create/",
+        icon: "fas fa-map-marker-alt",
+        img: "../img/maprun.jpg",
+        video: "",
+        order: 2
+    }) {
+    id
+  }
+}
+mutation MyMutation {
+  createInfo(
+    input: {
+        header: "SPOTIFY PLAYLIST",
+        text: "Download the official 2020 Mercer County Turkey Trot virtual race Spotify playlist!  Curated by the MCTT Race Committee, this playlist includes some of our favorites to get your heart pumping and keep you on track as you run.  Use it as you train over the next weeks and blast it out during your official run on Thanksgiving week!",  
+        url: "https://open.spotify.com/playlist/326sfAtMSaYwLO3gWUU5L2?si=csDOJykDQi2wLEecjL-kbg",
+        icon: "fab fa-spotify",
+        img: "../img/spotify.jpg",
+        video: "",
+        order: 3
+    }) {
+    id
+  }
+}
+mutation MyMutation {
+  createInfo(
+    input: {
+        header: "RACE RESULTS",
+        text: "Upload your race results.  After you enter your race results you will be able to upload your pictures.  You can also upload them directly to RunSignUp.",
+        url: "https://help.runsignup.com/support/solutions/articles/17000087349-submit-and-manage-virtual-results",
+        icon: "fas fa-stopwatch",
+        img: "../img/time.jpg",
+        video: "",
+        order: 4
+    }) {
+    id
+  }
+}
+mutation MyMutation {
+  createInfo(
+    input: {
+      header: "PHOTO UPLOAD",
+      text: "We want to see your smiling faces!  After you enter your race results you will be able to upload your pictures.  You can also upload them directly to RunSignUp.",
+      url: "https://help.runsignup.com/support/solutions/articles/17000108341-upload-your-own-photos",
+      icon: "fas fa-camera",
+      img: "../img/smile.jpg",
+    video: "",
+    order: 5
+    }) {
+    id
+  }
+}
+
+mutation MyMutation {
+  createInfo(
+    input: {
+    header: "OFFICIAL RACE T-SHIRT",
+    text: "This year, we're making the official race t-shirt available as an item you can purchase and have shipped directly to you!  Visit our merchandise store to select your size and order a shirt.  Orders placed after November 4th, 2020 will not be shipped until after the race has concluded.",
+    url: "https://jetty-life.printavo.com/merch/mercer-county-turkey-trot",
+    icon: "fas fa-tshirt",
+    img: "../img/shirt.jpg",
+    video: "",
+    order: 6
+    }) {
+    id
+  }
+}
+mutation MyMutation {
+  createCard(
+    input: {
+      title: "Joshua Harr Shane Foundation",
+      text: "https://joshuaharrshane.org/",
+      url: "https://joshuaharrshane.org/",
+      icon: "fab fa-wordpress",
+      img: "../img/josh.jpg",
+      order: 5 
+    }) {
+    id
+  }
+}
+
+mutation MyMutation {
+  createSponsor(input: 
+    {
+name: "Roundview Capital",
+img: "../img/rvc.png",
+url: "https://roundviewcapital.com/",
+icon: "fas fa-hand-holding-heart",
+order: 1
+    }) {
+    id
+  }
+}
+
+mutation MyMutation {
+  createSponsor(input: 
+    {
+name: "Troutman Pepper",
+img: "../img/tp.png",
+url: "https://www.troutman.com/",
+icon: "fas fa-hand-holding-heart",
+order: 2
+    }) {
+    id
+  }
+}
+
+
+mutation MyMutation {
+  createSponsor(input: 
+    {
+name: "Lasley Brahaney",
+img: "../img/lb.png",
+url: "https://www.lasleybrahaney.com/",
+icon: "fas fa-hand-holding-heart",
+order: 3
+    }) {
+    id
+  }
+}
+
+
+mutation MyMutation {
+  createSponsor(input: 
+    {
+name: "Stark & Stark",
+img: "../img/ss.png",
+url: "https://www.stark-stark.com/",
+icon: "fas fa-hand-holding-heart",
+order: 4
+    }) {
+    id
+  }
+}
+
+mutation MyMutation {
+  createSponsor(input: 
+    {
+name: "Bank Of Princeton",
+img: "../img/bp.png",
+url: "https://thebankofprinceton.com/",
+icon: "fas fa-hand-holding-heart",
+order: 5
+    }) {
+    id
+  }
+}
+
+mutation MyMutation {
+  createSponsor(input: 
+    {
+name: "BCB Bank",
+img: "../img/bcb.png",
+url: "https://www.bcb.bank/",
+icon: "fas fa-hand-holding-heart",
+order: 6
+    }) {
+    id
+  }
+}
+
+
+mutation MyMutation {
+  createSponsor(input: 
+    {
+name: "More Sponsors",
+img: "../img/ty.png",
+url: "https://runsignup.com/Race/Sponsors/NJ/Princeton/MercerCountyTurkeyTrot",
+icon: "fas fa-hand-holding-heart",
+order: 7
+    }) {
+    id
+  }
+}
+mutation MyMutation {
+  createBanner(
+    input: {
+      title: "Nancy Alter", 
+      text: "Website Design Development & Maintenance", 
+      }) {
+    id
+  }
+}
+mutation MyMutation {
+  createIntro(input: {
+    header: "THANK YOU!", 
+    text: "Thank you to everyone who participated in The 8th Annual Mercer County Turkey Trot.  Your efforts during these difficult times are greatly appreciated by all!  Wishing you a safe and healthy year and a return to our regular community event next year."}) {
+    id
+  }
+}
+///////////////////////////////////////////////////////////
+type Charity @model {
+  id: ID!
+  name: String!
+  img: String
+  url: String
+  icon: String
+  order: Int
+}
+type Sponsor @model {
+  id: ID!
+  name: String!
+  img: String
+  url: String
+  icon: String
+  order: Int
+}
+type Info @model {
+  id: ID!
+  header: String!
+  text: String
+  url: String
+  icon: String
+  img: String
+  video: String
+  order: Int
+}
+type Banner @model {
+  id: ID!
+  title1: String
+  title2: String
+  sponsor: String
+  location: String
+  date: String
+  img: String
+}
+type Intro @model {
+  id: ID!
+  header: String
+  text: String
+}

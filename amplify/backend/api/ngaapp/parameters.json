@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "ngaapp",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authngaapp8846a78d",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
