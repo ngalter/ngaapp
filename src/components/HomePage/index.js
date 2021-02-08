@@ -3,6 +3,8 @@ import AppBar from '../AppBar'
 import Drawer from '../Drawer';
 import Banner from '../Banner';
 import Interest from '../Interest';
+import ProjectTable from '../ProjectTable';
+
 import './styles.css'
 
 function HomePage() {
@@ -11,6 +13,7 @@ function HomePage() {
     <Drawer />  
     <Banner />
     <Interest />
+    <ProjectTable />
     </div>
     );
 }

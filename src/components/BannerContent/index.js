@@ -8,8 +8,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         color: 'white',
         fontSize: 40,
-        paddingTop: '175px',
-        paddingBottom: '100px',
+        paddingTop: '185px',
         textAlign: 'center',
         fontWeight: '700'
     }

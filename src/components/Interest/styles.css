@@ -6,12 +6,13 @@
   .int-grid {
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 31% 31% 31%;
     width: 70%;
     margin: auto;
-    padding-top: 50px!important;
-    padding-bottom: 50px!important;
+    padding-top: 70px!important;
+    padding-bottom: 70px!important;
     }
+
     @media only screen and (max-width: 760px) {
         .int-grid {
             grid-template-columns: 100%;

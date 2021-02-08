@@ -9,8 +9,9 @@ import './styles.css'
 
 const useStyles = makeStyles((theme) => ({
     avatar: {
-      backgroundColor: '#cc9900',
-      color: 'white',
+    backgroundColor: '#cc9900',
+    backgroundColor: 'white',
+    color: '#0c2557',
     },
     top: {
       backgroundColor: '#0c2557',

@@ -1,0 +1,28 @@
+  {
+      "data": 
+      [
+    {
+        "header": "Mercer County Turkey Trot",
+        "text": "Custom React Website",
+        "img": "../img/ttss.jpg",
+        "url": "https://mercercountyturkeytrot.com"
+    },
+    {
+        "header": "Roundview Capital",
+        "text": "Custom Wordpress Website",
+        "img": "../img/rvcss.jpg",
+        "url": "https://roundviewcapital.com"
+
+    },
+    {
+      "header": "Sharing Basket",
+      "text": "React Website Prototype",
+      "img": "../img/sbss.jpg",
+      "url": "https://sharing-basket.herokuapp.com/"
+
+  }
+
+]
+  }
+
+  
