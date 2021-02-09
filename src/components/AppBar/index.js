@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-import Drawer from '../Drawer';
+import MenuDrawer from '../MenuDrawer';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -13,12 +13,12 @@ const useStyles = makeStyles(() => ({
   title: {
     flexGrow: 1,
     fontFamily: 'Roboto;',
-      color: '#003366',
-      fontWeight: 200,
+      color: 'white',
+      fontWeight: 700,
       fontSize: '22px',
   },
   appbar: {
-    backgroundColor: 'white',
+    backgroundColor: 'rgba(0,0,0,.2)',
   }
 }));
 
@@ -29,7 +29,7 @@ export default function ButtonAppBar() {
     <div>
       <AppBar position="fixed" className={classes.appbar} elevation={0}>
         <Toolbar >
-        <Drawer />
+        <MenuDrawer />
           <Link style={{ textDecoration: 'none' }} href="/" >
           <Typography variant="h6" className={classes.title}>
                       Nancy Alter

@@ -6,10 +6,11 @@ import './styles.css'
 
   
 export default function ProjectTable() {
-    return (
-    <Paper className='tbl-wrapper'>
+    return (<div className='tbl-bkd'>
+        <div className='tbl-header'>Current Projects</div>
+        <Paper className='tbl-wrapper'>
         <table>
-        <caption> Current Projects</caption>
+        {/* <caption> Current Projects</caption> */}
           {data.data.map((row, i) => (
               <tr className='tr' key={i} >
                   <td>
@@ -25,6 +26,6 @@ export default function ProjectTable() {
           ))}
        
       </table>
-            </Paper>
+            </Paper></div>
   );
 }

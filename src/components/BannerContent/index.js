@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         color: 'white',
         fontSize: 40,
-        paddingTop: '185px',
+        paddingTop: '270px',
         textAlign: 'center',
         fontWeight: '700'
     }
@@ -24,9 +24,9 @@ function BannerContent(props) {
         <div className='bg-bkd'>
         <div className='banner-wrap'>
         <div className='banner-container'>                 
-        <Typography className={classes.header}>
+        <div className='banner-header'>
                 {props.title}<br />{props.text}
-        </Typography>   
+        </div>   
 
         </div>
                 </div>15

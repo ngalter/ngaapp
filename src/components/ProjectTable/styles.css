@@ -23,35 +23,40 @@ td {
     width: 250px;
     height: auto;
     border-radius: 5px;
-    border: 2px solid #f4f4f4;
+    border: 2px solid #f6f6f6;
   }
   table {
       border-collapse: collapse;
-      background-color: white;
+      background-color: none;
       margin-top: 50px;
       margin-bottom: 50px;
-      width: 100%;
-      margin: auto;
+      width: 102%;
+      margin-left: auto;
+      margin-right: auto;
       border-radius: 5px;
       border: none;
   }
-  caption {
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
+  .tbl-header {
+      text-align: center;
       font-weight: 700;
-      padding: 20px;
-      font-size: 22px;
-      color: white;
-      background-color:#0c2557;
+      padding: 15px;
+      font-size: 1.8em;
+      color: #444444;
   }
   .tbl-wrapper {
-        width: 80%;
+        width: 70%;
         height: auto;
         margin: auto;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
   }
 
-  @media only screen and (max-width: 670px) {
+  .tbl-bkd {
+    padding-top: 80px;
+    background-color: gainsboro;
+    padding-bottom: 80px;
+  }
+
+  @media only screen and (max-width: 760px) {
     table {
         padding: 5px;
     }
@@ -61,9 +66,18 @@ td {
       td{
         font-size: 14px;
         font-weight: 400;
+        padding-right: 10px;
+        padding-left: 10px;
       }
       .tbl-wrapper {
         width: 100%;
+  }
+  .tbl-header {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .pg-bkd {
+      padding-bottom: 0px;
   }
   tr:hover { background: #f4f4f4}
   tr {

@@ -9,24 +9,24 @@ import './styles.css'
 
 const useStyles = makeStyles((theme) => ({
     avatar: {
-    backgroundColor: '#cc9900',
-    backgroundColor: 'white',
+    backgroundColor: 'gainsboro',
     color: '#0c2557',
-    },
-    top: {
-      backgroundColor: '#0c2557',
-      transition: '.3s',
     },
     text: {
       height: '120px'
     },
     header: {
       color: 'white',
-      fontSize: 20,
+      fontSize: 22,
+      fontWeight: '700',
+      paddingRight: '5px',
+      paddingLeft: '5px'
     },
     font: {
         fontFamily: 'Paytone One, sans-serif;',
-        color: 'white'
+      color: 'rgb(12, 34, 97)',
+      fontSize: 20,
+      fontWeight: '700'
     },
     frame: {
       backgroundColor: 'black',
@@ -39,13 +39,13 @@ const useStyles = makeStyles((theme) => ({
 function IntroContent(props) {
     const classes = useStyles();
     return (<div>
-<Card>
-<CardHeader className={classes.top}
-avatar={
-  <Avatar className={classes.avatar}>
-    <i class={props.icon}></i>
-  </Avatar>
-}
+<Card className='grow'>
+<CardHeader className='top'
+        avatar={
+          <Avatar className={classes.avatar}>
+            <i class={props.icon}></i>
+          </Avatar>
+        }
 title={<Typography className={classes.font}>{props.header}</Typography>}
 />
 <CardContent>

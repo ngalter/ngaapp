@@ -1,5 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
@@ -23,20 +22,15 @@ const useStyles = makeStyles({
   fullList: {
     width: 'auto',
     },
-    menuButton: {
-      color: '#003366',
-      fontWeight: 100,
-      backgroundColor: 'transparent',
+    btn: {
+      color: 'white',
     },
 });
 
 export default function TemporaryDrawer() {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    top: false,
     left: false,
-    bottom: false,
-    right: false,
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -49,10 +43,6 @@ export default function TemporaryDrawer() {
 
   const list = (anchor) => (
     <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
-      })}
-      role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
@@ -60,7 +50,7 @@ export default function TemporaryDrawer() {
         <Link
           href="/"
         >
-          <ListItem button >
+          <ListItem >
             <ListItemIcon>
                    <HomeIcon className='signup-icon'/>
             </ListItemIcon>
@@ -69,7 +59,7 @@ export default function TemporaryDrawer() {
           </Link>
           <Divider />
           <Link href={'#portfolio'}>
-          <ListItem  button >
+          <ListItem >
             <ListItemIcon>
                    <InfoIcon className='drawer-icon' />
             </ListItemIcon>
@@ -77,7 +67,7 @@ export default function TemporaryDrawer() {
           </ListItem>
           </Link>
           <Link href={'#sponsorinformation'}>
-          <ListItem  button >
+          <ListItem  >
             <ListItemIcon>
                    <InfoIcon className='drawer-icon' />
             </ListItemIcon>
@@ -85,7 +75,7 @@ export default function TemporaryDrawer() {
           </ListItem>
           </Link>
           <Link href={'#charityinformation'}>
-          <ListItem  button >
+          <ListItem  >
             <ListItemIcon>
                    <InfoIcon className='drawer-icon' />
             </ListItemIcon>
@@ -96,7 +86,7 @@ export default function TemporaryDrawer() {
         <Link href="mailto:mercerturkeytrot@gmail.com"
         target="_blank"
         rel="noopener noreferrer">
-          <ListItem  button >
+          <ListItem  >
             <ListItemIcon>
                    <MailIcon className='drawer-icon' />
             </ListItemIcon>
@@ -110,12 +100,14 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-        <React.Fragment key={'left'}>
-              <Button onClick={toggleDrawer('left', true)}><MenuIcon className={classes.menuButton}/></Button>
-          <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
-            {list('left')}
-          </Drawer>
-        </React.Fragment>
+
+        <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
+        {list('left')}
+      </Drawer>
+      <Button onClick={toggleDrawer('left', true)}>
+        <MenuIcon className={classes.btn} />
+      </Button>
+        
     </div>
   );
 }
