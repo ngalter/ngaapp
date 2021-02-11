@@ -5,7 +5,8 @@
         "header": "Mercer County Turkey Trot",
         "text": "Custom React Website",
         "img": "../img/ttss.jpg",
-        "url": "https://mercercountyturkeytrot.com"
+        "url": "https://mercercountyturkeytrot.com",
+        "git": "https://github.com/ngalter/mctt"
     },
     {
         "header": "Roundview Capital",
@@ -25,7 +26,8 @@
     "header": "Sharing Basket",
     "text": "React Website Prototype",
     "img": "../img/sbss.jpg",
-    "url": "https://sharing-basket.herokuapp.com/"
+    "url": "https://sharing-basket.herokuapp.com/",
+    "git": "https://github.com/ngalter/sharingbasket"
 
 }
 

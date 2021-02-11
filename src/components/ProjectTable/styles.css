@@ -1,14 +1,18 @@
 td {
     border-bottom: 1px solid #cccccc;
   }
-  tr:hover { background: #f4f4f4; }
+  tr:hover { background: #2a3990; }
+   /* tr:hover { background: #262261;} */
+
   tr {
-      background-color:white;
+    background: #1b75bc;
+      /* background-color: #29aae2 */
+      /* background-color: #2a3990 */
       
   }
 
   td {
-      color: #1b75bc;
+      color: white;
       font-size: 20px;
       font-weight: 500;
       margin-top: 100px;
@@ -19,36 +23,33 @@ td {
   }
 
   td  a:link {
-    color: #1b75bc;
+    color: white;
     text-decoration: none;
   }
   td  a:visited {
-    color: #1b75bc;
+    color: white;
     text-decoration: none;
   }
   td  a:hover {
-    color: #1b75bc;
-    text-decoration: underline;
+    color: white;
+    text-decoration: none;
   }
 
   .tbl-img {
     vertical-align: middle;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 250px;
+    width: 220px;
     height: auto;
-    border-radius: 5px;
-    border: 2px solid #f6f6f6;
+    border-radius: 2px;
   }
   table {
       border-collapse: collapse;
       background-color: none;
       margin-top: 50px;
       margin-bottom: 50px;
-      width: 102%;
       margin-left: auto;
       margin-right: auto;
-      border-radius: 5px;
       border: none;
   }
   .tbl-header {
@@ -59,13 +60,14 @@ td {
       color: #444444;
   }
   .tbl-wrapper {
-        width: 70%;
+        width: 100%;
         height: auto;
         margin: auto;
         margin-bottom: 80px;
   }
 
   .tbl-bkd {
+    width: 100%;
     padding-top: 80px;
     background-color: white;
     padding-bottom: 80px;
@@ -76,7 +78,7 @@ td {
         padding: 5px;
     }
     .tbl-img {
-        width: 200px;
+        width: 170px;
       }
       td{
         font-size: 14px;
@@ -93,10 +95,5 @@ td {
   }
   .pg-bkd {
       padding-bottom: 0px;
-  }
-  tr:hover { background: #f4f4f4}
-  tr {
-      background-color: white;
-      
   }
 }
