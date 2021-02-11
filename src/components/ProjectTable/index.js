@@ -6,7 +6,7 @@ import './styles.css'
 
   
 export default function ProjectTable() {
-    return (<div className='tbl-bkd'>
+    return (<div id={'portfolio'} className='tbl-bkd'>
         <div className='tbl-header'>Current Projects</div>
         <Paper className='tbl-wrapper'>
         <table>

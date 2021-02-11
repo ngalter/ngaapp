@@ -4,8 +4,7 @@ import './styles.css';
 
 function About() {
 
-  return (
-    
+  return (<div id={'about'}>
     <div className='about-wrap'>
       <div className='about-box'>
         <div className='about-head'>{data.about.header}</div>
@@ -18,7 +17,7 @@ function About() {
           </div>  
         </div>   
       </div>
-    </div>
+    </div></div>
     );
 }
 

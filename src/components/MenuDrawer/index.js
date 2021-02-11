@@ -57,33 +57,25 @@ export default function TemporaryDrawer() {
             <ListItemText primary={'Home'}   className='drawer-label' />
           </ListItem>
           </Link>
-          <Divider />
+        <Divider />
+        <Link href={'#about'}>
+          <ListItem  >
+            <ListItemIcon>
+                   <InfoIcon className='drawer-icon' />
+            </ListItemIcon>
+                <ListItemText primary={'About'}  className='drawer-label' />
+          </ListItem>
+          </Link>
           <Link href={'#portfolio'}>
           <ListItem >
             <ListItemIcon>
                    <InfoIcon className='drawer-icon' />
             </ListItemIcon>
-            <ListItemText primary={'Portfolio'}  className='drawer-label' />
-          </ListItem>
-          </Link>
-          <Link href={'#sponsorinformation'}>
-          <ListItem  >
-            <ListItemIcon>
-                   <InfoIcon className='drawer-icon' />
-            </ListItemIcon>
-                <ListItemText primary={'Sponsor Information'}  className='drawer-label' />
-          </ListItem>
-          </Link>
-          <Link href={'#charityinformation'}>
-          <ListItem  >
-            <ListItemIcon>
-                   <InfoIcon className='drawer-icon' />
-            </ListItemIcon>
-            <ListItemText primary={'Charity Information'}  className='drawer-label' />
+            <ListItemText primary={'Current Projects'}  className='drawer-label' />
           </ListItem>
           </Link>
           <Divider />
-        <Link href="mailto:mercerturkeytrot@gmail.com"
+        <Link href="mailto:nancy.alter@gmail.com"
         target="_blank"
         rel="noopener noreferrer">
           <ListItem  >
