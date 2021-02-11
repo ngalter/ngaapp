@@ -28,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
   card: {
       paddingTop: '20px',
       fontFamily: 'Paytone One, sans-serif;',
-      color: '#1b75bc',
+    // color: '#1b75bc',
+    color: '#2a3990',
       fontSize: 20,
       fontWeight: '500',
       textAlign: 'center'

@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
       zIndex: 100,
     }
   }));
-function Contact() {
+function Contact(props) {
 const classes = useStyles();
 
   return (
@@ -36,7 +36,7 @@ const classes = useStyles();
         target="_blank"
         rel="noopener noreferrer"
         linkButton={true}
-      >CONTACT
+      >{props.text}
       </Button>
     </div>
   );

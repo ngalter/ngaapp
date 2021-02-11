@@ -1,0 +1,11 @@
+.contact-box {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 50px;
+}
+.contact-input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

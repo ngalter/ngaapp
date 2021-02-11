@@ -5,6 +5,7 @@ import About2 from '../About2';
 import Banner from '../Banner';
 import Interest from '../Interest';
 import ProjectTable from '../ProjectTable';
+import ContactForm from '../ContactForm';
 
 import './styles.css'
 
@@ -16,6 +17,7 @@ function HomePage() {
     <About2 />
     <Interest />
     <ProjectTable />
+    <ContactForm />
     </div>
     );
 }

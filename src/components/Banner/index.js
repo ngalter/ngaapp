@@ -12,7 +12,7 @@ function Banner() {
         <div className='banner-header'>
                 {data.banner.title}<br />{data.banner.text}
         </div>   
-        <ContactButton />
+          <ContactButton text={'CONTACT'}/>
         </div>
            </div>
           </div>

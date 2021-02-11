@@ -1,20 +1,20 @@
 td {
     border-bottom: 1px solid #cccccc;
   }
-  tr:hover { background: #2a3990; }
+  tr:hover { background: #f4f4f4; }
    /* tr:hover { background: #262261;} */
 
   tr {
-    background: #1b75bc;
+    background: white;
       /* background-color: #29aae2 */
       /* background-color: #2a3990 */
       
   }
 
   td {
-      color: white;
+      color: #2a3990;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 400;
       margin-top: 100px;
       margin-bottom: 100px;
       padding-right: 30px;
@@ -23,16 +23,16 @@ td {
   }
 
   td  a:link {
-    color: white;
+    color: #2a3990;
     text-decoration: none;
   }
   td  a:visited {
-    color: white;
+    color: #2a3990;
     text-decoration: none;
   }
   td  a:hover {
-    color: white;
-    text-decoration: none;
+    color: #1b75bc;
+    text-decoration: none!important;
   }
 
   .tbl-img {
