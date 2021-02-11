@@ -13,32 +13,32 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: 400,
     },
     btn: {
-      marginTop: '10px',
+      marginTop: '40px',
       fontSize: 13,
-      backgroundColor: 'green',
+      backgroundColor: '#1b75bc',
       '&:hover': {
-        backgroundColor: 'darkgreen',
+        backgroundColor: '#2a3990',
       },
       color: 'white',
       paddingTop: '7px',
-      borderRadius: 30,
+      borderRadius: 3,
       zIndex: 100,
     }
   }));
-function SignUp() {
+function Contact() {
 const classes = useStyles();
 
   return (
     <div>
       <Button className={classes.btn}
         variant='contained'
-        href="https://runsignup.com/Race/NJ/WestWindsor/MercerCountyTurkeyTrot"
+        href="/"
         target="_blank"
         rel="noopener noreferrer"
         linkButton={true}
-      >Sign&nbsp;Up
+      >CONTACT
       </Button>
     </div>
   );
 }
-export default SignUp;
+export default Contact;

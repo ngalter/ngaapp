@@ -1,6 +1,7 @@
 .int-wrap {
     display: block;
     width: 100%;
+    background-color: #efefef!important;
   }
   
   .int-grid {

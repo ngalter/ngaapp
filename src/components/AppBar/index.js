@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import MenuDrawer from '../MenuDrawer';
+import logo from '../img/logo512.png';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -18,7 +19,25 @@ const useStyles = makeStyles(() => ({
       fontSize: '22px',
   },
   appbar: {
-    backgroundColor: 'rgba(0,0,0,.2)',
+    // backgroundColor: 'rgba(0,0,0,.2)',
+    backgroundColor: 'white',
+  },
+  img: {
+    marginTop: '10px',
+    width: '35px',
+    height: 'auto'
+  },
+  textDk: {
+    paddingLeft: '45px',
+    fontFamily: 'Roboto;',
+    color: '#262261',
+  },
+  textLt: {
+    fontFamily: 'Roboto;',
+    color: '#1b75bc',
+  },
+  title: {
+    marginTop: '-35px'
   }
 }));
 
@@ -31,9 +50,8 @@ export default function ButtonAppBar() {
         <Toolbar >
         <MenuDrawer />
           <Link style={{ textDecoration: 'none' }} href="/" >
-          <Typography variant="h6" className={classes.title}>
-                      Nancy Alter
-          </Typography>
+            <img className={classes.img} src={logo} alt='tags' />
+            <p className={classes.title}><span className={classes.textDk}>NANCY</span><span className={classes.textLt}>ALTER</span></p>
           </Link>
         </Toolbar>
       </AppBar>

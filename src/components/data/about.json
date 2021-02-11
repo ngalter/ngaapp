@@ -2,7 +2,7 @@
     "about": 
     {
         "header": "About",
-        "text": "I am a freelance developer with experience designing and developing custom websites for charitable and for-profit organizations. I develop websites based on the needs and the desires of the each client.  I develop websites in a variety of frameworks and platforms including React, Bootstrap and Wordpress.  I also develop websites hosted on AWS using S3 buckets, AWS Amplify and Cloudfront. I work with clients and their vendors and other volunteer providors to create vibrant, dependable, easy to use websites.",
-        "img": "../img/computer.png"
+        "text": "I am a freelance developer with experience designing and developing custom websites for charitable and for-profit organizations. I develop websites based on the needs and specifications of each client.  I work using a variety of frameworks and platforms including React, Bootstrap and Wordpress.  I also develop cloud based websites hosted on AWS using S3 buckets, AWS Amplify and Cloudfront. I work with clients and their vendors and other volunteer providors to create responsive, dependable, easy to use websites.",
+        "img": "../img/logo512.png"
     }
 }

@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     width: 'auto',
     },
     btn: {
-      color: 'white',
+      color: '#1b75bc',
     },
 });
 

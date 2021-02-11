@@ -10,7 +10,6 @@ export default function ProjectTable() {
         <div className='tbl-header'>Current Projects</div>
         <Paper className='tbl-wrapper'>
         <table>
-        {/* <caption> Current Projects</caption> */}
           {data.data.map((row, i) => (
               <tr className='tr' key={i} >
                   <td>
@@ -21,7 +20,7 @@ export default function ProjectTable() {
                           {row.header}<br />{row.text}
                       </Link>
                       </td>
-                  <td align="right" ><img className='tbl-img' src={row.img} /></td>
+                  <td align="right" ><img className='tbl-img' src={row.img} alt='project'/></td>
               </tr>
           ))}
        

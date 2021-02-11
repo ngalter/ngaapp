@@ -1,23 +1,8 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import ContactButton from '../ContactButton';
 import './styles.css'
 
-const useStyles = makeStyles((theme) => ({
-    header: {
-        flexGrow: 1,
-        color: 'white',
-        fontSize: 40,
-        paddingTop: '270px',
-        textAlign: 'center',
-        fontWeight: '700'
-    }
-
-    
-}));
-
 function BannerContent(props) {
-    const classes = useStyles();
     return (<div>
         {props.id === 0
             ?
@@ -27,9 +12,9 @@ function BannerContent(props) {
         <div className='banner-header'>
                 {props.title}<br />{props.text}
         </div>   
-
+        <ContactButton />
         </div>
-                </div>15
+                </div>
                 </div>
             :
             ""

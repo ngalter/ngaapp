@@ -5,7 +5,6 @@ import './styles.css';
 
 function Interest() {
   return (
-    
       <div className='int-wrap'>  
         <div className='int-grid'> 
           {data.interest.map((int, i) => (

@@ -1,7 +1,7 @@
 import React from 'react';
-import AppBar from '../AppBar'
-import Drawer from '../MenuDrawer';
-import About from '../About';
+import AppBar from '../AppBar';
+// import About from '../About';
+import About2 from '../About2';
 import Banner from '../Banner';
 import Interest from '../Interest';
 import ProjectTable from '../ProjectTable';
@@ -12,7 +12,8 @@ function HomePage() {
   return (<div>
     <AppBar />
     <Banner />
-    <About />
+    {/* <About /> */}
+    <About2 />
     <Interest />
     <ProjectTable />
     </div>

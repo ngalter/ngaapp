@@ -13,7 +13,10 @@ const useStyles = makeStyles((theme) => ({
     color: '#0c2557',
     },
     text: {
-      height: '120px'
+      height: '120px',
+      paddingRight: '15px',
+      paddingLeft: '15px',
+      paddingBottom: '20px'
     },
     header: {
       color: 'white',
@@ -22,11 +25,13 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: '5px',
       paddingLeft: '5px'
     },
-    font: {
-        fontFamily: 'Paytone One, sans-serif;',
-      color: 'rgb(12, 34, 97)',
+  card: {
+      paddingTop: '20px',
+      fontFamily: 'Paytone One, sans-serif;',
+      color: '#1b75bc',
       fontSize: 20,
-      fontWeight: '700'
+      fontWeight: '500',
+      textAlign: 'center'
     },
     frame: {
       backgroundColor: 'black',
@@ -39,14 +44,9 @@ const useStyles = makeStyles((theme) => ({
 function IntroContent(props) {
     const classes = useStyles();
     return (<div>
-<Card className='grow'>
-<CardHeader className='top'
-        avatar={
-          <Avatar className={classes.avatar}>
-            <i class={props.icon}></i>
-          </Avatar>
-        }
-title={<Typography className={classes.font}>{props.header}</Typography>}
+<Card>
+<CardHeader
+title={<Typography className={classes.card}><i className={props.icon}></i>&nbsp;{props.header}</Typography>}
 />
 <CardContent>
 <Typography variant="body2" color="textSecondary"
