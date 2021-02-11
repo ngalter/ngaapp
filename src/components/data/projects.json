@@ -15,12 +15,19 @@
 
     },
     {
-      "header": "Sharing Basket",
-      "text": "React Website Prototype",
-      "img": "../img/sbss.jpg",
-      "url": "https://sharing-basket.herokuapp.com/"
+      "header": "Joshua Harr Shane Foundation",
+      "text": "Custom Wordpress Website",
+      "img": "../img/josh.jpg",
+      "url": "https://joshuaharrshane.org/"
 
-  }
+  },
+  {
+    "header": "Sharing Basket",
+    "text": "React Website Prototype",
+    "img": "../img/sbss.jpg",
+    "url": "https://sharing-basket.herokuapp.com/"
+
+}
 
 ]
   }

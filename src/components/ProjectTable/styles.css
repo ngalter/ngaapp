@@ -22,6 +22,10 @@ td {
     color: #1b75bc;
     text-decoration: none;
   }
+  td  a:visited {
+    color: #1b75bc;
+    text-decoration: none;
+  }
   td  a:hover {
     color: #1b75bc;
     text-decoration: underline;
