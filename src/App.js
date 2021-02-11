@@ -1,5 +1,5 @@
 import React from 'react';
-import { withAuthenticator } from '@aws-amplify/ui-react';
+import { withAuthenticator} from '@aws-amplify/ui-react';
 import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -9,10 +9,11 @@ Amplify.configure(awsconfig);
 
 
 function App() {
-    return (
+    return (<div>
         <Router>
             <Route path='/' exact component={HomePage} />
         </Router>
+        </div>
     );
 }
 

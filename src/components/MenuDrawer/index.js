@@ -73,19 +73,15 @@ export default function TemporaryDrawer() {
             </ListItemIcon>
             <ListItemText primary={'Current Projects'}  className='drawer-label' />
           </ListItem>
-          </Link>
-          <Divider />
-        <Link href="mailto:nancy.alter@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer">
-          <ListItem  >
-            <ListItemIcon>
-                   <MailIcon className='drawer-icon' />
-            </ListItemIcon>
-            <ListItemText primary={'Contact'} className='drawer-label' />
-          </ListItem>
-          <AmplifySignOut />
         </Link>
+        <Link href={'#contact'}>
+          <ListItem >
+            <ListItemIcon>
+                   <InfoIcon className='drawer-icon' />
+            </ListItemIcon>
+            <ListItemText primary={'Contact'}  className='drawer-label' />
+          </ListItem>
+          </Link>
       </List>
     </div>
   );

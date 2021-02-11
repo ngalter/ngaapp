@@ -50,7 +50,8 @@ td {
       margin-bottom: 50px;
       margin-left: auto;
       margin-right: auto;
-      border: none;
+      border: 1px solid #efefef;
+      border-top: solid 10px #1b75bc;
   }
   .tbl-header {
       text-align: center;

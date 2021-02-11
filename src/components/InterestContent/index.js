@@ -3,15 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
-import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import './styles.css'
 
 const useStyles = makeStyles((theme) => ({
-    avatar: {
-    backgroundColor: 'gainsboro',
-    color: '#0c2557',
-    },
     text: {
       height: '120px',
       paddingRight: '15px',
@@ -27,9 +22,7 @@ const useStyles = makeStyles((theme) => ({
     },
   card: {
       paddingTop: '20px',
-      fontFamily: 'Paytone One, sans-serif;',
-    // color: '#1b75bc',
-    color: '#2a3990',
+      color: '#2a3990',
       fontSize: 20,
       fontWeight: '500',
       textAlign: 'center'

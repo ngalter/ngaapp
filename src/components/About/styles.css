@@ -1,6 +1,6 @@
 .about-wrap {
     width: 100%;
-    background-color: gainsboro;
+    background-color: white;
 }
 .about-box {
     width: 70%;
@@ -27,6 +27,7 @@
     width: 70%;
     height: auto;
     margin: auto;
+    margin-top: -20px;
 }
 .about-img :hover{
     padding-left: 10px;
@@ -43,6 +44,27 @@
     padding: 10px;
     color: #444444!important;
 }
+
+.myimg { 
+    position: relative; 
+    width: 100%; /* for IE 6 */
+ }
+ 
+ h2 { 
+    position: absolute; 
+    width: 100%; 
+ }
+
+ .mytxt { 
+    position: absolute; 
+    font-size: 1em;
+    font-weight: 100;
+    color: yellow;
+    background-color: 'transparent';
+    top: 40px; 
+    left: 60px; 
+    width: 50%; 
+ }
 @media only screen and (max-width: 900px) {
     .about-img {
         padding-left: 0px;

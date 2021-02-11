@@ -32,7 +32,6 @@ const InputForm = () => {
   const classes = useStyles();
   const [formObject, setFormObject] = useState({});
 
-  // Load all pantries and store them with setPantries
   useEffect(() => {
     setFormObject({
       fname: "",
@@ -46,7 +45,6 @@ function formSubmit(formObject) {
     console.log(formObject);
  }
     
-  // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value })
@@ -59,8 +57,8 @@ function formSubmit(formObject) {
     };
   };
   return (
-    <div>
-      <div className='contact-wrapper'>
+    <div id={'contact'} className='contact-wrapper'>
+      <div className='contact-header'>Contact</div>
       <Paper className='contact-paper'>
           <form>
         <div className='contact-grid'>
@@ -119,7 +117,6 @@ function formSubmit(formObject) {
         </form>
         </Paper>  
       </div>  
-      </div>
     );
   };
 
