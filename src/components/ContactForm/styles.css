@@ -1,6 +1,6 @@
 .contact-wrapper {
     width: 100%;
-    background-color: #efefef;
+    background-color: white;
     margin-top: 20px;
     margin-bottom: 80px;
     padding-top: 80px;
@@ -49,6 +49,7 @@ textarea {
 }
 .contact-paper {
     border-top: solid 10px #1b75bc;
+    background-color: #efefef!important;
     width: 60%;
     padding-top: 80px;
     padding-bottom: 80px;

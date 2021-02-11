@@ -1,6 +1,5 @@
 import React from 'react';
 import AppBar from '../AppBar';
-// import About from '../About';
 import About from '../About';
 import Banner from '../Banner';
 import Interest from '../Interest';

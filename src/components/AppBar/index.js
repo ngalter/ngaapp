@@ -18,7 +18,6 @@ const useStyles = makeStyles(() => ({
       fontSize: '22px',
   },
   appbar: {
-    // backgroundColor: 'rgba(0,0,0,.2)',
     backgroundColor: 'white',
   },
   img: {

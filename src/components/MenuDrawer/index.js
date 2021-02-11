@@ -3,16 +3,16 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import HomeIcon from '@material-ui/icons/Home';
+import PermIdentityIcon from '@material-ui/icons/PermIdentity';
+import ViewListIcon from '@material-ui/icons/ViewList';
+import MessageIcon from '@material-ui/icons/Message';
 import List from '@material-ui/core/List';
 import Link from '@material-ui/core/Link';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
-import InfoIcon from '@material-ui/icons/Info';
 import MenuIcon from '@material-ui/icons/Menu';
-import { AmplifySignOut } from '@aws-amplify/ui-react';
 import './styles.css';
 
 const useStyles = makeStyles({
@@ -52,7 +52,7 @@ export default function TemporaryDrawer() {
         >
           <ListItem >
             <ListItemIcon>
-                   <HomeIcon className='signup-icon'/>
+                   <HomeIcon className='drawer-icon'/>
             </ListItemIcon>
             <ListItemText primary={'Home'}   className='drawer-label' />
           </ListItem>
@@ -61,7 +61,7 @@ export default function TemporaryDrawer() {
         <Link href={'#about'}>
           <ListItem  >
             <ListItemIcon>
-                   <InfoIcon className='drawer-icon' />
+                   <PermIdentityIcon className='drawer-icon' />
             </ListItemIcon>
                 <ListItemText primary={'About'}  className='drawer-label' />
           </ListItem>
@@ -69,15 +69,15 @@ export default function TemporaryDrawer() {
           <Link href={'#portfolio'}>
           <ListItem >
             <ListItemIcon>
-                   <InfoIcon className='drawer-icon' />
+                   <ViewListIcon className='drawer-icon' />
             </ListItemIcon>
-            <ListItemText primary={'Current Projects'}  className='drawer-label' />
+            <ListItemText primary={'Projects'}  className='drawer-label' />
           </ListItem>
         </Link>
         <Link href={'#contact'}>
           <ListItem >
             <ListItemIcon>
-                   <InfoIcon className='drawer-icon' />
+                   <MessageIcon className='drawer-icon' />
             </ListItemIcon>
             <ListItemText primary={'Contact'}  className='drawer-label' />
           </ListItem>

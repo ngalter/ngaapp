@@ -1,18 +1,16 @@
-.signup-icon {
-    font-size: 1.5em!important;
-    background-color: white!important;
-}
 .drawer-icon {
     font-size: 1.4!important;
     background-color: white!important;
+    color: #1b75bc!important;
 }
 .drawer-label {
-    color: #222222!important;
+    color: #1b75bc!important;
     font-size: 1.2em!important;
     text-decoration: none!important;
+    width: 90px;
 }
 .drawer-title {
-    color: #222222!important;
+    color: #1b75bc!important;
     font-size: 1.2em!important;
     margin-top: 10px!important;
     margin-left: 20px!important;
