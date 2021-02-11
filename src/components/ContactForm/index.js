@@ -1,19 +1,44 @@
 import React, { useState, useEffect } from "react";
-import { Input, FormBtn } from "../Form";
+import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
-import ContactButton from '../ContactButton';
+import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
 import "./styles.css"
 
-const InputForm = () => {
+const useStyles = makeStyles((theme) => ({
+  root: {
+      flexgrow: 1,
+  },
+  menuItem: {
+      paddingRight: 8,
+      fontSize: 16,
+    fontWeight: 400,
+  },
+  btn: {
+    marginTop: '40px',
+    fontSize: 13,
+    backgroundColor: '#1b75bc',
+    '&:hover': {
+      backgroundColor: '#262261',
+    },
+    color: 'white',
+    paddingTop: '7px',
+    borderRadius: 3,
+    zIndex: 100,
+  }
+}));
 
+const InputForm = () => {
+  const classes = useStyles();
   const [formObject, setFormObject] = useState({});
 
   // Load all pantries and store them with setPantries
   useEffect(() => {
     setFormObject({
-      firstname: "",
-      lastname: "",
-      email: ""
+      fname: "",
+      lname: "",
+      email: "",
+      message: ""
     })
   },[]);
 
@@ -34,37 +59,69 @@ function formSubmit(formObject) {
     };
   };
   return (
-      <div>
-          <Box className='contact-box'>
-         <div className="Container-fluid" style={{ textAlign: "center" }}>
-          <Input className='contact-input'
+    <div>
+      <div className='contact-wrapper'>
+      <Paper className='contact-paper'>
+          <form>
+        <div className='contact-grid'>
+        <div>   
+        <label>
+          First Name:<br />
+          <input
+            name="fname"
+            placeholder="First Name"
+            value={formObject.fname}
             onChange={handleInputChange}
-            name="firstname"
-            placeholder="First Name (required)"
-            style={{ textAlign: "left" }}
           />
-          <Input className='contact-input'
+          </label><br />
+          <label>
+          Last Name:<br />
+          <input
+            name="lname"
+            placeholder="Last Name"
+            value={formObject.lname}
             onChange={handleInputChange}
-            name="lastname"
-            placeholder="Last Name (required)"
-            style={{ textAlign: "left"}}
-                  />
-          <Input className='contact-input'
-            onChange={handleInputChange}
+          />
+          </label><br />
+          <label>
+          Email:<br />
+          <input
             name="email"
-            placeholder="Email (required)"
-            style={{ textAlign: "left" }}
+            placeholder="Email"
+            value={formObject.email}
+            onChange={handleInputChange}
           />
-          <ContactButton text={'SUBMIT'}
-            disabled={!(formObject.firstname && formObject.lastname && formObject.email)}
+          </label>
+        </div> 
+        <div>
+        <label>
+          Your Message:<br />
+          <textarea
+              name="message"
+            placeholder="Your Message"
+            value={formObject.message}
+            onChange={handleInputChange}
+          />
+          </label> 
+          </div>
+            </div>
+            <Button className={classes.btn}
+          variant='contained'
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+          linkButton={true}  
+          disabled
+          ={!(formObject.fname && formObject.lname && formObject.email && formObject.message)}
             onClick={handleFormSubmit}
-          >
-            </ContactButton>
-              </div>
-              </Box>
-        
-        </div>      
+            >SUBMIT
+        </Button>
+        </form>
+        </Paper>  
+      </div>  
+      </div>
     );
   };
 
 export default InputForm;
+
