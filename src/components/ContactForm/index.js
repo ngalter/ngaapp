@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 400,
   },
   btn: {
-    marginTop: '40px',
+    marginTop: '5px',
     fontSize: 13,
     backgroundColor: '#1b75bc',
     '&:hover': {
@@ -59,9 +59,10 @@ function formSubmit(formObject) {
     <div id={'contact'} className='contact-wrapper'>
       <div className='contact-header'>Contact</div>
       <Paper className='contact-paper'>
-          <form>
+        <form>
+        <img src='../img/about.jpg' alt='nancy alter' className='contact-img' /><br />   
         <div className='contact-grid'>
-        <div>   
+        <div>
         <label>
           First Name:<br />
           <input

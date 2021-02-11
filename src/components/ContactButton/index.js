@@ -32,9 +32,7 @@ const classes = useStyles();
     <div>
       <Button className={classes.btn}
         variant='contained'
-        href="/"
-        target="_blank"
-        rel="noopener noreferrer"
+        href={'#contact'}
         linkButton={true}
       >CONTACT
       </Button>
