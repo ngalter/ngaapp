@@ -43,20 +43,27 @@ td {
     height: auto;
     border-radius: 2px;
   }
+  .grad {
+    width: 100%;
+    border-top: 10px solid transparent;
+    -moz-border-image: -moz-linear-gradient(to right, #262261, #1b75bc);
+    -webkit-border-image: -webkit-linear-gradient(to right, #262261, #1b75bc);
+    border-image: linear-gradient(to right, #262261, #1b75bc);
+    border-image-slice: 1;
+}
   table {
       border-collapse: collapse;
       background-color: none;
       margin-top: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 0px;
       margin-left: auto;
       margin-right: auto;
       border: 1px solid #efefef;
-      border-top: solid 10px #1b75bc;
   }
   .tbl-header {
       text-align: center;
       font-weight: 700;
-      padding: 15px;
+      padding-top: 5px;
       font-size: 1.8em;
       color: #444444;
   }
@@ -71,7 +78,7 @@ td {
     width: 100%;
     padding-top: 80px;
     background-color: white;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 
   @media only screen and (max-width: 760px) {

@@ -7,9 +7,10 @@ import './styles.css'
   
 export default function ProjectTable() {
     return (<div id={'portfolio'} className='tbl-bkd'>
-        <div className='tbl-header'>Current Projects</div>
+        <div className='tbl-header'>Projects</div>
         <Box className='tbl-wrapper'>
-        <table>
+            <table>
+                <div className='grad'>
           {data.data.map((row, i) => (
               <tr className='tr' key={i} >
                   <td>
@@ -33,7 +34,7 @@ export default function ProjectTable() {
                   <td align="right" ><img className='tbl-img' src={row.img} alt='project'/></td>
               </tr>
           ))}
-       
+       </div>
       </table>
             </Box></div>
   );

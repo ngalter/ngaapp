@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 
-function IntroContent(props) {
+function InterestContent(props) {
     const classes = useStyles();
     return (<div>
 <Card>
@@ -54,4 +54,4 @@ component="p"
     </div>
   );
 }
-export default IntroContent;
+export default InterestContent;
