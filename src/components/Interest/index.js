@@ -7,8 +7,9 @@ function Interest() {
   return (
       <div className='int-wrap'>  
         <div className='int-grid'> 
-          {data.interest.map((int, i) => (
-                  <InterestContent
+          {data.interest.map((int, key) => (
+            <InterestContent
+                        key={key}
                         header={int.header}
                         text={int.text}
                         icon={int.icon}

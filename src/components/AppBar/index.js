@@ -15,7 +15,8 @@ const useStyles = makeStyles(() => ({
     fontFamily: 'Roboto;',
       color: 'white',
       fontWeight: 700,
-      fontSize: '22px',
+    fontSize: '22px',
+    marginTop: '-35px'
   },
   appbar: {
     backgroundColor: 'white',
@@ -33,9 +34,6 @@ const useStyles = makeStyles(() => ({
   textLt: {
     fontFamily: 'Roboto;',
     color: '#1b75bc',
-  },
-  title: {
-    marginTop: '-35px'
   }
 }));
 

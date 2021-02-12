@@ -33,7 +33,7 @@ const classes = useStyles();
       <Button className={classes.btn}
         variant='contained'
         href={'#contact'}
-        linkButton={true}
+        // linkButton={true}
       >CONTACT
       </Button>
     </div>

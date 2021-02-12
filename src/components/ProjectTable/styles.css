@@ -43,14 +43,7 @@ td {
     height: auto;
     border-radius: 2px;
   }
-  .grad {
-    width: 100%;
-    border-top: 10px solid transparent;
-    -moz-border-image: -moz-linear-gradient(to right, #262261, #1b75bc);
-    -webkit-border-image: -webkit-linear-gradient(to right, #262261, #1b75bc);
-    border-image: linear-gradient(to right, #262261, #1b75bc);
-    border-image-slice: 1;
-}
+
   table {
       border-collapse: collapse;
       background-color: none;

@@ -1,10 +1,9 @@
 .contact-wrapper {
     width: 100%;
-    background-color: white;
+    background-color: #efefef;
     margin-top: 0px;
-    margin-bottom: 0px;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 500px;
 }
 .contact-input {
     padding: 10px;
@@ -54,11 +53,6 @@ textarea {
     border: solid 1px #999999;
 }
 .contact-paper {
-    border-top: 10px solid transparent;
-    -moz-border-image: -moz-linear-gradient(to right, #262261, #1b75bc);
-    -webkit-border-image: -webkit-linear-gradient(to right, #262261, #1b75bc);
-    border-image: linear-gradient(to right, #262261, #1b75bc);
-    border-image-slice: 1;
     background-color: #efefef!important;
     width: 60%;
     padding-top: 40px;
@@ -83,5 +77,8 @@ textarea {
     }
     .contact-paper {
         width: 100%;
+    }
+    .contact-wrapper {
+        padding-bottom: 300px;
     }
 }

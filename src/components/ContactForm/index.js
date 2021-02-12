@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import "./styles.css"
 
@@ -40,26 +40,36 @@ const InputForm = () => {
     })
   },[]);
 
-function formSubmit(formObject) {
-    console.log(formObject);
+function formSubmit() {
+  console.log(formObject);
+  setFormObject({
+    fname: "",
+    lname: "",
+    email: "",
+    message: ""
+  });
  }
     
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value })
-}
+  }
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    if (formObject.firstname && formObject.lastname && formObject.email) {
+    if (formObject.fname && formObject.lname && formObject.email && formObject.message) {
       formSubmit();
     };
   };
+  const postAction = "https://5kcztk1y9k.execute-api.us-east-1.amazonaws.com/Testing/feedback";
+  const postMethod = 'post';
+  const postId = 'contact_form';
+
   return (
     <div id={'contact'} className='contact-wrapper'>
+      <Box className='contact-paper'>
       <div className='contact-header'>Contact</div>
-      <Paper className='contact-paper'>
-        <form>
+        <form method={postMethod} id={postId} action={postAction}> 
         <img src='../img/about.jpg' alt='nancy alter' className='contact-img' /><br />   
         <div className='contact-grid'>
         <div>
@@ -95,7 +105,7 @@ function formSubmit(formObject) {
         <label>
           Your Message:<br />
           <textarea
-              name="message"
+            name="message"
             placeholder="Your Message"
             value={formObject.message}
             onChange={handleInputChange}
@@ -105,17 +115,13 @@ function formSubmit(formObject) {
             </div>
             <Button className={classes.btn}
           variant='contained'
-          href="/"
-          target="_blank"
-          rel="noopener noreferrer"
-          linkButton={true}  
           disabled
           ={!(formObject.fname && formObject.lname && formObject.email && formObject.message)}
             onClick={handleFormSubmit}
             >SUBMIT
         </Button>
         </form>
-        </Paper>  
+        </Box>  
       </div>  
     );
   };

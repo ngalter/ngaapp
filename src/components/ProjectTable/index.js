@@ -10,7 +10,7 @@ export default function ProjectTable() {
         <div className='tbl-header'>Projects</div>
         <Box className='tbl-wrapper'>
             <table>
-                <div className='grad'>
+            <tbody>
           {data.data.map((row, i) => (
               <tr className='tr' key={i} >
                   <td>
@@ -26,7 +26,7 @@ export default function ProjectTable() {
                           href={row.git}
                           target={"blank"}
                           rel={"noopener noreferrer"}>
-                          <i class="fab fa-github fa-sm"></i>
+                          <i className="fab fa-github fa-sm"></i>
                           </Link>
                           : ""
                         }
@@ -34,7 +34,7 @@ export default function ProjectTable() {
                   <td align="right" ><img className='tbl-img' src={row.img} alt='project'/></td>
               </tr>
           ))}
-       </div>
+        </tbody>
       </table>
             </Box></div>
   );
