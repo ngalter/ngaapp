@@ -1,5 +1,0 @@
-type Card @model {
-  id: ID!
-  title: String!
-}
-
