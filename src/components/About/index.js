@@ -4,9 +4,9 @@ import './styles.css';
 
 function About() {
 
-  return (<div id={'about'}>
+  return (<div id={'about'} className='about-top'> 
     <div className='about-wrap'>
-      <div className='about-box'>
+      <div className='about-box'> 
         <div className='about-grid'> 
           <div>
             <img className='about-img' src={data.about.img} alt='computer' />  

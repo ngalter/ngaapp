@@ -38,17 +38,17 @@ const InputForm = () => {
       email: "",
       message: ""
     })
-  },[]);
+  }, []);
 
-function formSubmit() {
-  console.log(formObject);
-  setFormObject({
-    fname: "",
-    lname: "",
-    email: "",
-    message: ""
-  });
- }
+  function formSubmit() {
+    console.log(formObject);
+    setFormObject({
+      fname: "",
+      lname: "",
+      email: "",
+      message: ""
+    });
+  }
     
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -57,11 +57,10 @@ function formSubmit() {
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    if (formObject.fname && formObject.lname && formObject.email && formObject.message) {
-      formSubmit();
-    };
+    formSubmit();
   };
-  const postAction = "https://5kcztk1y9k.execute-api.us-east-1.amazonaws.com/Testing/feedback";
+
+  const postAction = "https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback";
   const postMethod = 'post';
   const postId = 'contact_form';
 
@@ -70,7 +69,7 @@ function formSubmit() {
       <Box className='contact-paper'>
       <div className='contact-header'>Contact</div>
         <form method={postMethod} id={postId} action={postAction}> 
-        <img src='../img/about.jpg' alt='nancy alter' className='contact-img' /><br />   
+        <img src='../img/about.jpg' alt='nga' className='contact-img' /><br />   
         <div className='contact-grid'>
         <div>
         <label>
@@ -114,9 +113,8 @@ function formSubmit() {
           </div>
             </div>
             <Button className={classes.btn}
-          variant='contained'
-          disabled
-          ={!(formObject.fname && formObject.lname && formObject.email && formObject.message)}
+            variant='contained'
+            disabled={!(formObject.fname && formObject.lname && formObject.email && formObject.message)}
             onClick={handleFormSubmit}
             >SUBMIT
         </Button>

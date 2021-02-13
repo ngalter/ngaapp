@@ -37,9 +37,10 @@ form {
 input {
     width: 200px;
     margin-bottom: 10px;
-    padding: 5px;
-    background-color:#f7f7f7;
-    border: solid 1px #999999;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: white;
+    border: solid 1px #cccccc;
     margin-top: 2px;
 }
 textarea {
@@ -47,10 +48,11 @@ textarea {
     width: 80%;
     margin: auto;
     height: 200px;
-    padding: 5px;
+    padding: 8px;
+    border-radius: 5px;
     margin-top: 2px;
-    background-color:#f7f7f7;
-    border: solid 1px #999999;
+    background-color:white;
+    border: solid 1px #cccccc;
 }
 .contact-paper {
     background-color: #efefef!important;
