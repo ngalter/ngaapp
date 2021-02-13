@@ -60,15 +60,15 @@ const InputForm = () => {
     formSubmit();
   };
 
-  const postAction = "https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback";
-  const postMethod = 'post';
-  const postId = 'contact_form';
+  // const postAction = "https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback";
+  // const postMethod = 'post';
+  // const postId = 'contact_form';
 
   return (
     <div id={'contact'} className='contact-wrapper'>
       <Box className='contact-paper'>
       <div className='contact-header'>Contact</div>
-        <form method={postMethod} id={postId} action={postAction}> 
+        <form> 
         <img src='../img/about.jpg' alt='nga' className='contact-img' /><br />   
         <div className='contact-grid'>
         <div>
