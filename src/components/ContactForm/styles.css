@@ -2,7 +2,7 @@
     width: 100%;
     background-color: #efefef;
     margin-top: 0px;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 500px;
 }
 .contact-input {
@@ -17,7 +17,7 @@
 .contact-header {
     text-align: center;
     font-weight: 700;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     font-size: 1.8em;
     color: #444444;
 }
@@ -83,4 +83,12 @@ textarea {
     .contact-wrapper {
         padding-bottom: 300px;
     }
+}
+@media only screen and (max-width: 700px) {
+.contact-img {
+display: none;
+}
+textarea {
+    height: 160px;
+}
 }

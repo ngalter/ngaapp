@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "ngaappcda26eca": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "hosting": {}
+}

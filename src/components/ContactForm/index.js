@@ -39,17 +39,7 @@ const InputForm = () => {
       message: ""
     })
   }, []);
-
-  function formSubmit() {
-    console.log(formObject);
-    setFormObject({
-      fname: "",
-      lname: "",
-      email: "",
-      message: ""
-    });
-  }
-    
+ 
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value })
@@ -57,18 +47,21 @@ const InputForm = () => {
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    formSubmit();
+    setFormObject({
+      fname: "",
+      lname: "",
+      email: "",
+      message: ""
+    });
   };
 
-  // const postAction = "https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback";
-  // const postMethod = 'post';
-  // const postId = 'contact_form';
+
 
   return (
     <div id={'contact'} className='contact-wrapper'>
       <Box className='contact-paper'>
       <div className='contact-header'>Contact</div>
-        <form> 
+        <form type='submit' method='post' action='https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback'  onSubmit={handleFormSubmit}> 
         <img src='../img/about.jpg' alt='nga' className='contact-img' /><br />   
         <div className='contact-grid'>
         <div>
@@ -114,6 +107,7 @@ const InputForm = () => {
             </div>
             <Button className={classes.btn}
             variant='contained'
+            type='submit'
             disabled={!(formObject.fname && formObject.lname && formObject.email && formObject.message)}
             onClick={handleFormSubmit}
             >SUBMIT
@@ -125,4 +119,5 @@ const InputForm = () => {
   };
 
 export default InputForm;
+
 

@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: '5px'
     },
   card: {
-      paddingTop: '20px',
+    paddingTop: '20px',
       color: '#2a3990',
       fontSize: 20,
       fontWeight: '500',
@@ -44,7 +44,7 @@ title={<Typography className={classes.card}><i className={props.icon}></i>&nbsp;
 />
 <CardContent>
 <Typography variant="body2" color="textSecondary"
-className={classes.text}
+className='card-text'
 component="p"
 >
   {props.text}
