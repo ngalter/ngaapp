@@ -45,23 +45,24 @@ const InputForm = () => {
     setFormObject({ ...formObject, [name]: value })
   }
 
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    setFormObject({
-      fname: "",
-      lname: "",
-      email: "",
-      message: ""
-    });
-  };
+  // function handleFormSubmit(event) {
+  //   event.preventDefault();
+  //   setFormObject({
+  //     fname: "",
+  //     lname: "",
+  //     email: "",
+  //     message: ""
+  //   });
+  // };
 
 
 
   return (
     <div id={'contact'} className='contact-wrapper'>
       <Box className='contact-paper'>
-      <div className='contact-header'>Contact</div>
-        <form type='submit' method='post' action='https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback'  onSubmit={handleFormSubmit}> 
+        <div className='contact-header'>Contact</div>
+        <form role='form' method='post' action='https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback' id='feedback'> 
+        {/* <form role='form' method='post' action='https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback' id='feedback' onSubmit={handleFormSubmit}>  */}
         <img src='../img/about.jpg' alt='nga' className='contact-img' /><br />   
         <div className='contact-grid'>
         <div>
