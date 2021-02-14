@@ -45,15 +45,9 @@ const InputForm = () => {
     setFormObject({ ...formObject, [name]: value })
   }
 
-  // function handleFormSubmit(event) {
-  //   event.preventDefault();
-  //   setFormObject({
-  //     fname: "",
-  //     lname: "",
-  //     email: "",
-  //     message: ""
-  //   });
-  // };
+  function handleFormSubmit(event) {
+
+  };
 
 
 
