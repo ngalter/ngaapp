@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from 'axios';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
@@ -30,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 const InputForm = () => {
   const classes = useStyles();
   const [formObject, setFormObject] = useState({});
+  // const [feedbackData, setFeedbackData] = useState([]);
 
   useEffect(() => {
     setFormObject({
@@ -37,26 +39,38 @@ const InputForm = () => {
       lname: "",
       email: "",
       message: ""
-    })
+    });
+    // setFeedbackData({ feedbackData: "" })
   }, []);
- 
+
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value })
   }
 
-  function handleFormSubmit(event) {
+  const url = 'https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback';
+  const getData = () => {
+    axios.get(url).then(res => {
+      const feedback = res.data;
+      return feedback
+          .catch((err) => console.log(err)
+          );
+      }
+    )}
 
+
+
+  function handleFormSubmit(event) { 
+    const myres = getData;
+    console.log(myres);
+    
   };
-
-
 
   return (
     <div id={'contact'} className='contact-wrapper'>
       <Box className='contact-paper'>
         <div className='contact-header'>Contact</div>
-        <form role='form' method='post' action='https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback' id='feedback'> 
-        {/* <form role='form' method='post' action='https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback' id='feedback' onSubmit={handleFormSubmit}>  */}
+        <form method='post' id='feedback-form' action='https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback'> 
         <img src='../img/about.jpg' alt='nga' className='contact-img' /><br />   
         <div className='contact-grid'>
         <div>
@@ -111,8 +125,6 @@ const InputForm = () => {
         </Box>  
       </div>  
     );
-  };
+  }
 
 export default InputForm;
-
-
