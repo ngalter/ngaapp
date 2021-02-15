@@ -146,7 +146,8 @@ const InputForm = () => {
             onClick={handleFormSubmit}
             >SUBMIT
         </Button>
-        <Button className={classes.btnr}
+            <Button className={classes.btnr}
+               disabled={!(formObject.fname || formObject.lname || formObject.email || formObject.message)}
             variant='contained'
             type='submit'
             onClick={handleFormReset}
