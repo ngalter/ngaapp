@@ -55,17 +55,6 @@ const InputForm = () => {
     });
   }, []);
 
-  const handleFormReset = (e) => {
-    e.preventDefault();
-    setFormObject({
-      fname: "",
-      lname: "",
-      email: "",
-      message: ""
-    });
-    container.empty();
-  } 
-
   const handleFormSubmit = (e) => {
     e.preventDefault();
     $.ajax({
@@ -77,6 +66,12 @@ const InputForm = () => {
         // var container = $("#feedback").find("div.container-fluid");
         container.empty();
         container.append("<h2>" + data + "</h2>");
+        setFormObject({
+          fname: "",
+          lname: "",
+          email: "",
+          message: ""
+        });
       })
       .fail(function() {
        console.log('failed to register');
@@ -145,13 +140,6 @@ const InputForm = () => {
             disabled={!(formObject.fname && formObject.lname && formObject.email && formObject.message)}
             onClick={handleFormSubmit}
             >SUBMIT
-        </Button>
-            <Button className={classes.btnr}
-               disabled={!(formObject.fname || formObject.lname || formObject.email || formObject.message)}
-            variant='contained'
-            type='submit'
-            onClick={handleFormReset}
-            >RESET
         </Button>
         </form>
         <div className={'container-fluid'}></div>
