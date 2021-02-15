@@ -64,7 +64,7 @@ const InputForm = () => {
      })
       .done(function (data) {
         container.empty();
-        container.append(data);
+        container.append(<h4>data</h4>);
         setFormObject({
           fname: "",
           lname: "",
