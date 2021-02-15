@@ -46,19 +46,19 @@ const InputForm = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: "https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback",
-            success: function (data) {
-              console.log(data);
-              var container = $("#feedback_form").find("div.container-fluid");
-              // container.empty();
-              container.append("<h2>" + data + "</h2>");
-              console.log(data);
-            },
-            dataType: 'json'
-          });
-    }
+    $.ajax({
+      type: 'POST',
+      url:  "https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback",
+      data: formObject
+     })
+      .done(function (data) {
+        console.log(data);
+       this.clearForm()
+      }.bind(this))
+      .fail(function() {
+       console.log('failed to register');
+      });
+  };
 
 
   function handleInputChange(event) {
