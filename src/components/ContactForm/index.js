@@ -52,9 +52,11 @@ const InputForm = () => {
       data: formObject
      })
       .done(function (data) {
-        console.log(data);
-       this.clearForm()
-      }.bind(this))
+        console.log(data + ' Im in!');
+        var container = $("#feedback").find("div.container-fluid");
+        container.empty();
+        container.append("<h2>" + data + "</h2>");
+      })
       .fail(function() {
        console.log('failed to register');
       });
@@ -68,6 +70,7 @@ const InputForm = () => {
 
   return (
     <div id={'contact'} className='contact-wrapper'>
+      <div id='feedback'>
       <Box className='contact-paper'>
         <div className='contact-header'>Contact</div>
         <form type="submit" method="post" id="feedback_form" action="https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback" > 
@@ -124,6 +127,7 @@ const InputForm = () => {
         </form>
         <div className={'container-fluid'}></div>
         </Box>  
+        </div>
       </div>  
     );
   }
