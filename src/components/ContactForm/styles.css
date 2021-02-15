@@ -68,6 +68,12 @@ textarea {
     grid-gap: 40px;
     grid-template-columns: 50% 50%;
 }
+.container-fluid {
+    background-color: yellow;
+    color: red;
+    font-size: 2em;
+    font-weight: 900;
+}
 @media only screen and (max-width: 900px) {
     .contact-grid {
         display: grid;

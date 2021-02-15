@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
+import $ from "jquery";
 import "./styles.css"
 
 const useStyles = makeStyles((theme) => ({
@@ -40,37 +40,37 @@ const InputForm = () => {
       email: "",
       message: ""
     });
-    // setFeedbackData({ feedbackData: "" })
   }, []);
+
+
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback",
+            success: function (data) {
+              console.log(data);
+              var container = $("#feedback_form").find("div.container-fluid");
+              // container.empty();
+              container.append("<h2>" + data + "</h2>");
+              console.log(data);
+            },
+            dataType: 'json'
+          });
+    }
+
 
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value })
   }
 
-  const url = 'https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback';
-  const getData = () => {
-    axios.get(url).then(res => {
-      const feedback = res.data;
-      return feedback
-          .catch((err) => console.log(err)
-          );
-      }
-    )}
-
-
-
-  function handleFormSubmit(event) { 
-    const myres = getData;
-    console.log(myres);
-    
-  };
-
   return (
     <div id={'contact'} className='contact-wrapper'>
       <Box className='contact-paper'>
         <div className='contact-header'>Contact</div>
-        <form method='post' id='feedback-form' action='https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback'> 
+        <form type="submit" method="post" id="feedback_form" action="https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback" > 
         <img src='../img/about.jpg' alt='nga' className='contact-img' /><br />   
         <div className='contact-grid'>
         <div>
@@ -122,9 +122,13 @@ const InputForm = () => {
             >SUBMIT
         </Button>
         </form>
+        <div className={'container-fluid'}></div>
         </Box>  
       </div>  
     );
   }
 
 export default InputForm;
+
+
+// "https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback"
