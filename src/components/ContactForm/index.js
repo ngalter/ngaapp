@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
 const InputForm = () => {
   const classes = useStyles();
   const [formObject, setFormObject] = useState({});
+  const container = $("#feedback").find("div.container-fluid");
 
   useEffect(() => {
     setFormObject({
@@ -62,7 +63,6 @@ const InputForm = () => {
       email: "",
       message: ""
     });
-    var container = $("#feedback").find("div.container-fluid");
     container.empty();
   } 
 
@@ -74,8 +74,7 @@ const InputForm = () => {
       data: formObject
      })
       .done(function (data) {
-        console.log(data + ' Im in!');
-        var container = $("#feedback").find("div.container-fluid");
+        // var container = $("#feedback").find("div.container-fluid");
         container.empty();
         container.append("<h2>" + data + "</h2>");
       })
@@ -85,9 +84,11 @@ const InputForm = () => {
   };
 
 
+
   function handleInputChange(event) {
     const { name, value } = event.target;
-    setFormObject({ ...formObject, [name]: value })
+    setFormObject({ ...formObject, [name]: value });
+    container.empty();
   }
 
   return (
