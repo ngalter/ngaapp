@@ -72,8 +72,7 @@ textarea {
     color: #444444;
     font-size: 1em;
     font-weight: 400;
-    width: 200px;
-    height: 'auto';
+    width: 70%;
     margin: auto;
 }
 @media only screen and (max-width: 900px) {

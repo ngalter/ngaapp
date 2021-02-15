@@ -83,8 +83,6 @@ const InputForm = () => {
       });
   };
 
-
-
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value });
@@ -122,6 +120,7 @@ const InputForm = () => {
           Email:<br />
           <input
             name="email"
+            type="email"
             placeholder="Email"
             value={formObject.email}
             onChange={handleInputChange}
