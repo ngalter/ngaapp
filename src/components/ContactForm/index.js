@@ -25,13 +25,25 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: '7px',
     borderRadius: 3,
     zIndex: 100,
+  },
+  btnr: {
+    marginTop: '5px',
+    fontSize: 13,
+    backgroundColor: '#1b75bc',
+    '&:hover': {
+      backgroundColor: '#262261',
+    },
+    color: 'white',
+    paddingTop: '7px',
+    marginLeft: '7px',
+    borderRadius: 3,
+    zIndex: 100,
   }
 }));
 
 const InputForm = () => {
   const classes = useStyles();
   const [formObject, setFormObject] = useState({});
-  // const [feedbackData, setFeedbackData] = useState([]);
 
   useEffect(() => {
     setFormObject({
@@ -42,7 +54,17 @@ const InputForm = () => {
     });
   }, []);
 
-
+  const handleFormReset = (e) => {
+    e.preventDefault();
+    setFormObject({
+      fname: "",
+      lname: "",
+      email: "",
+      message: ""
+    });
+    var container = $("#feedback").find("div.container-fluid");
+    container.empty();
+  } 
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -123,6 +145,12 @@ const InputForm = () => {
             disabled={!(formObject.fname && formObject.lname && formObject.email && formObject.message)}
             onClick={handleFormSubmit}
             >SUBMIT
+        </Button>
+        <Button className={classes.btnr}
+            variant='contained'
+            type='submit'
+            onClick={handleFormReset}
+            >RESET
         </Button>
         </form>
         <div className={'container-fluid'}></div>
