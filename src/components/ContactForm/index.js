@@ -63,9 +63,8 @@ const InputForm = () => {
       data: formObject
      })
       .done(function (data) {
-        // var container = $("#feedback").find("div.container-fluid");
         container.empty();
-        container.append("<h2>" + data + "</h2>");
+        container.append(data);
         setFormObject({
           fname: "",
           lname: "",
