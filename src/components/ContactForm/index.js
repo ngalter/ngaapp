@@ -55,6 +55,15 @@ const InputForm = () => {
     });
   }, []);
 
+  function clearForm() {
+    setFormObject({
+      fname: "",
+      lname: "",
+      email: "",
+      message: ""
+    });
+  }
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     $.ajax({
@@ -64,16 +73,11 @@ const InputForm = () => {
      })
       .done(function (data) {
         container.empty();
-        container.append(<h4>data</h4>);
+        container.append(<h4>{data}</h4>);
+        clearForm();
       })
       .fail(function() {
        console.log('failed to register');
-      });
-      setFormObject({
-        fname: "",
-        lname: "",
-        email: "",
-        message: ""
       });
   };
 
@@ -149,6 +153,3 @@ const InputForm = () => {
   }
 
 export default InputForm;
-
-
-// "https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback"
