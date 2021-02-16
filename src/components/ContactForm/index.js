@@ -65,15 +65,15 @@ const InputForm = () => {
       .done(function (data) {
         container.empty();
         container.append(<h4>data</h4>);
-        setFormObject({
-          fname: "",
-          lname: "",
-          email: "",
-          message: ""
-        });
       })
       .fail(function() {
        console.log('failed to register');
+      });
+      setFormObject({
+        fname: "",
+        lname: "",
+        email: "",
+        message: ""
       });
   };
 
