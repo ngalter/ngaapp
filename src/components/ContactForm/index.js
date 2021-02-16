@@ -77,7 +77,9 @@ const InputForm = () => {
         clearForm();
       })
       .fail(function() {
-       console.log('failed to register');
+        console.log('failed to register');
+        container.append("<h4>" + 'There was an error, please try again.' + "</h4>");
+        clearForm();
       });
   };
 
