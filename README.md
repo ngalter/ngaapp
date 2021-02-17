@@ -7,8 +7,7 @@ Nancy Alter Web Development is my portfolio written in React and hosted on Amazo
 ## Technologies
 The development version of the portfolio utilizes AWS Cognito Authorization on the contact page.  You must sign in to leave a message.  It uses Amazon S3 buckets and Cloudformation. It also utilizes Amazon SES (email) and Lambda functions. It uses AWS Amplify and Hosting.  
 
-The application is written using React.js.  It also uses a small amount of jquery.
-
+The application is written using React.js.
 ## Created By
 Nancy Alter
 https://github.com/ngalter
