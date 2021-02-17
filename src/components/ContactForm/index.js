@@ -89,11 +89,9 @@ const InputForm = () => {
     container.empty();
   }
 
-  return (
-    <div id={'contact'} className='contact-wrapper'>
-      <div id='feedback'>
+  return (<div className='contact-wrapper'>
       <Box className='contact-paper'>
-        <div className='contact-header'>Contact</div>
+        <div id='feedback'>
         <form type="submit" method="post" id="feedback_form" action="https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback" > 
         <img src='../img/about.jpg' alt='nga' className='contact-img' /><br />   
         <div className='contact-grid'>
@@ -147,9 +145,10 @@ const InputForm = () => {
             >SUBMIT
         </Button>
         </form>
-        <div className={'container-fluid'}></div>
+          <div className={'container-fluid'}></div>
+          </div>
         </Box>  
-        </div>
+        
       </div>  
     );
   }

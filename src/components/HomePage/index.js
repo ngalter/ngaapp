@@ -4,7 +4,8 @@ import About from '../About';
 import Banner from '../Banner';
 import Interest from '../Interest';
 import ProjectTable from '../ProjectTable';
-import ContactForm from '../ContactForm';
+import ContactHead from '../ContactHead';
+import Auth from '../Auth';
 
 import './styles.css'
 
@@ -15,7 +16,8 @@ function HomePage() {
     <About />
     <Interest />
     <ProjectTable />
-    <ContactForm />
+    <ContactHead />
+    <Auth />
     </div>
     );
 }

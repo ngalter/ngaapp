@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AmplifySignOut } from '@aws-amplify/ui-react';
+// import { AmplifySignOut } from '@aws-amplify/ui-react';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import HomeIcon from '@material-ui/icons/Home';
@@ -81,7 +81,7 @@ export default function TemporaryDrawer() {
             <ListItemText primary={'Contact'}  className='drawer-label' />
           </ListItem>
         </Link>
-        <AmplifySignOut />
+        {/* <AmplifySignOut /> */}
       </List>
     </div>
   );
