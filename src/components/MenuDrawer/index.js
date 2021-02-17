@@ -48,9 +48,7 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
         <List>
-        <Link
-          href="/"
-        >
+        <Link href={'#banner'}>
           <ListItem >
             <ListItemIcon>
                    <HomeIcon className='drawer-icon'/>

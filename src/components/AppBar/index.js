@@ -16,13 +16,14 @@ const useStyles = makeStyles(() => ({
       color: 'white',
       fontWeight: 700,
     fontSize: '22px',
-    marginTop: '-35px'
+    marginTop: '-35px',
+    paddingTop: '1px'
   },
   appbar: {
     backgroundColor: 'white',
   },
   img: {
-    marginTop: '10px',
+    marginTop: '17px',
     width: '35px',
     height: 'auto'
   },
@@ -45,7 +46,7 @@ export default function ButtonAppBar() {
       <AppBar position="fixed" className={classes.appbar} elevation={1}>
         <Toolbar >
         <MenuDrawer />
-          <Link style={{ textDecoration: 'none' }} href="/" >
+          <Link style={{ textDecoration: 'none' }} href={'#banner'}>
             <img className={classes.img} src={logo} alt='tags' />
             <p className={classes.title}><span className={classes.textDk}>NANCY</span><span className={classes.textLt}>ALTER</span></p>
           </Link>

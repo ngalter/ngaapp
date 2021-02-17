@@ -47,6 +47,11 @@
         width: 70%;
         margin-top: 0px;
     }
+    .about-wrap {
+        width: 100%;
+        background-color: white;
+        margin-top: 40px;
+    }
     .about-img {
         padding: 0px!important;
         width: 60%;

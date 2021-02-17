@@ -5,7 +5,7 @@ import './styles.css';
 
 function Banner() {
 
-  return (<div>
+  return (<div id='banner'>
          <div className='bg-bkd'>
         <div className='banner-wrap'>
         <div className='banner-container'>                 

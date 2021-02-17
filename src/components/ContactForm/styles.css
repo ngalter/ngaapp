@@ -84,13 +84,15 @@ textarea {
         width: 95%;
     }
     .contact-paper {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 85%;
+        margin: auto;
     }
     .contact-wrapper {
         padding-bottom: 300px;
         margin: 0px;
+    }
+    textarea {
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -98,10 +100,6 @@ textarea {
 display: none;
 }
 textarea {
-    height: 160px;
-    font-size: 1.2em;
-}
-input {
-    font-size: 1.2em;
+width: 95%;
 }
 }
