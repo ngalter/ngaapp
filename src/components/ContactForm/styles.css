@@ -36,6 +36,7 @@ form {
 }
 input {
     width: 200px;
+    font-size: 1.1em;
     margin-bottom: 10px;
     padding: 8px;
     border-radius: 5px;
@@ -45,9 +46,9 @@ input {
 }
 textarea {
     font-family:Arial, Helvetica, sans-serif;
-    width: 80%;
-    margin: auto;
     height: 200px;
+    font-size: 1.1em;
+    width: 100%;
     padding: 8px;
     border-radius: 5px;
     margin-top: 2px;
@@ -59,8 +60,6 @@ textarea {
     width: 60%;
     padding-top: 40px;
     padding-bottom: 80px;
-    padding-right: 20px;
-    padding-left: 20px;
     margin: auto;
 }
 .contact-grid {
@@ -70,7 +69,7 @@ textarea {
 }
 .container-fluid {
     color: #444444;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
     width: 70%;
     margin: auto;
@@ -78,17 +77,20 @@ textarea {
 @media only screen and (max-width: 900px) {
     .contact-grid {
         display: grid;
-        grid-gap: 30px;
+        grid-gap: 20px;
         grid-template-columns: 100%;
     }
     form {
-        width: 90%;
+        width: 95%;
     }
     .contact-paper {
-        width: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .contact-wrapper {
         padding-bottom: 300px;
+        margin: 0px;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -97,5 +99,9 @@ display: none;
 }
 textarea {
     height: 160px;
+    font-size: 1.2em;
+}
+input {
+    font-size: 1.2em;
 }
 }
