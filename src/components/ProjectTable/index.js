@@ -18,7 +18,8 @@ export default function ProjectTable() {
                           href={row.url}
                           target={"blank"}
                           rel={"noopener noreferrer"}>
-                          {row.header}<br />{row.text}
+                          <span className='hdr'>{row.header}</span><br />
+                          <span className='txt'>{row.text}</span>
                       </Link>&nbsp;
                       { row.git
                           ?

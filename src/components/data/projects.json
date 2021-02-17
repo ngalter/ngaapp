@@ -2,15 +2,15 @@
       "data": 
       [
       {
-          "header": "Nancy Alter Web Development - dev",
-          "text": "React Website - Dev",
+          "header": "Nancy Alter Web Development",
+          "text": "Custom React Website, PWA - Dev",
           "img": "../img/nga.jpg",
           "url": "https://master.dc0dfnwxcdddq.amplifyapp.com/",
           "git": "https://github.com/ngalter/ngaapp"
       },
     {
         "header": "Mercer County Turkey Trot",
-        "text": "Custom React Website",
+        "text": "Custom React Website, PWA",
         "img": "../img/ttss.jpg",
         "url": "https://mercercountyturkeytrot.com",        
         "git": "https://github.com/ngalter/mctt"
