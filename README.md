@@ -1,4 +1,4 @@
-## Nancy Alter Web Development (ngaapp)
+## Nancy Alter Web Development (Portfolio)
 <img width="1000" alt="banner" src="https://github.com/ngalter/ngaapp/blob/master/public/img/nga.jpg">
 
 ## Description
