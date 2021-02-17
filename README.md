@@ -1,5 +1,5 @@
 ## Nancy Alter Web Development (ngaapp)
-<img width="1000" alt="banner" src="https://github.com/ngalter/sharingbasket/blob/master/client/public/img/nga.jpg">
+<img width="1000" alt="banner" src="https://github.com/ngalter/ngapp/blob/master/public/img/nga.jpg">
 
 ## Description
 Nancy Alter Web Development is my portfolio written in React and hosted on Amazon Web Services.  The portfolio has basic features including a banner, contact button, about section, projects section, and message section.  The portfolio also utilizes a menu drawer feature.
