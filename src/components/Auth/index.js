@@ -24,11 +24,11 @@ const AuthStateApp = () => {
     return authState === AuthState.SignedIn && user ? (
         <div>
         <div className='log-box'>
-            <div className='log-msg'>Hello, {user.attributes.email}</div>
+                <div className='log-msg'>Hello, {user.attributes.email}</div>
                 <div className='log_btn'><AmplifySignOut /></div>
         </div>
             <ContactHead title='Contact'  />
-            <ContactForm />
+            <ContactForm userEmail={user.attributes.email}/>
         </div>
     ) : (
             <div>

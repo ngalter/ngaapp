@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const InputForm = () => {
+function ContactForm(props) {
   const classes = useStyles();
   const [formObject, setFormObject] = useState({});
   const container = $("#feedback").find("div.container-fluid");
@@ -50,7 +50,7 @@ const InputForm = () => {
     setFormObject({
       fname: "",
       lname: "",
-      email: "",
+      email: props.userEmail,
       message: ""
     });
   }, []);
@@ -120,6 +120,7 @@ const InputForm = () => {
             name="email"
             type="email"
             placeholder="Email"
+            disabled
             value={formObject.email}
             onChange={handleInputChange}
           />
@@ -153,4 +154,4 @@ const InputForm = () => {
     );
   }
 
-export default InputForm;
+export default ContactForm;

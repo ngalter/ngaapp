@@ -1,8 +1,8 @@
 .contact-header {
     text-align: center;
     font-weight: 700;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    padding-bottom: 0px!important;
+    margin-bottom: 0px!important;
     padding-top: 70px;
     font-size: 1.8em;
     color: #444444;
@@ -11,6 +11,8 @@
     text-align: center;
     font-weight: 400;
     padding-top: 10px;
+    padding-bottom: 0px!important;
+    margin-bottom: 0px!important;
     font-size: 1em;
     color: #444444;
 }
