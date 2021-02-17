@@ -5,14 +5,14 @@
           "header": "Nancy Alter Web Development - dev",
           "text": "development React Website",
           "img": "../img/nga.jpg",
-          "url": "https://mercercountyturkeytrot.com",
-          "git": "https://github.com/ngalter/mctt"
+          "url": "https://master.dc0dfnwxcdddq.amplifyapp.com/",
+          "git": "https://github.com/ngalter/ngaapp"
       },
     {
         "header": "Mercer County Turkey Trot",
         "text": "Custom React Website",
         "img": "../img/ttss.jpg",
-        "url": "https://master.dc0dfnwxcdddq.amplifyapp.com/",
+        "url": "https://mercercountyturkeytrot.com",        
         "git": "https://github.com/ngalter/mctt"
     },
     {
@@ -40,5 +40,3 @@
 
 ]
   }
-
-  https://master.dc0dfnwxcdddq.amplifyapp.com/
