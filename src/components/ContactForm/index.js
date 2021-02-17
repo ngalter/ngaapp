@@ -59,7 +59,6 @@ function ContactForm(props) {
     setFormObject({
       fname: "",
       lname: "",
-      email: "",
       message: ""
     });
   }
