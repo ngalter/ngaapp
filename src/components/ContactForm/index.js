@@ -115,7 +115,7 @@ function ContactForm(props) {
           </label><br />
           <label>
           Email:<br />
-          <input
+          <input className='input-disabled'
             name="email"
             type="email"
             placeholder="Email"

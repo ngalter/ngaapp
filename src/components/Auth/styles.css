@@ -4,6 +4,7 @@
 .log-box {
     display: block;
     width: 250px;
+    padding-bottom: 300px;
     height: auto;
     margin: auto;
 }
@@ -11,6 +12,9 @@
     display: inline;
     width: 50px!important;
     height: auto;
+}
+.auth-locate {
+    margin-top: -60px;
 }
 @media only screen and (max-width: 900px) {
     .log-box {
