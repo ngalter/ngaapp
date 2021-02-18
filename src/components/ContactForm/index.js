@@ -92,7 +92,7 @@ function ContactForm(props) {
       <Paper className='contact-paper'>
         <div id='feedback'>
         <form type="submit" method="post" id="feedback_form" action="https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback" > 
-        <img src='../img/about.jpg' alt='nga' className='contact-img' /><br />   
+        {/* <img src='../img/about.jpg' alt='nga' className='contact-img' /><br />    */}
         <div className='contact-grid'>
         <div>
         <label>
