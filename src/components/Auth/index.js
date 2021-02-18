@@ -24,7 +24,6 @@ const AuthStateApp = () => {
 
     return authState === AuthState.SignedIn && user ? (
         <div id={'contact'}>
-
             <ContactHead title='Contact'  />
             <ContactForm userEmail={user.attributes.email} />
             <div className='log-box'>
@@ -33,7 +32,7 @@ const AuthStateApp = () => {
             </div>
         </div>
     ) : (
-            <div>
+            <div id={'contact'}>
                 <ContactHead title='Contact' title2='Please sign in to send a message.'/>
                 <div className='auth-locate'><AmplifyAuthenticator /></div>
             </div>

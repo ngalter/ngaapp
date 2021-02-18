@@ -15,12 +15,11 @@
 }
 .so-btn {
     padding: 10px;
-    border: 1px solid transparent;
-    border-radius: 20px!important;
     width: 30px;
 }
 .contact-img {
     width: 100px;
+    margin-top: 10px;
     margin-bottom: 20px;
     height: auto;
     border-radius: 300px;
@@ -44,7 +43,7 @@ input {
 }
 .input-disabled {
     background-color: #eeeeee;
-    color: #999999;
+    color: #666666;
 }
 textarea {
     font-family:Arial, Helvetica, sans-serif;
@@ -59,12 +58,13 @@ textarea {
 }
 .contact-paper {
     width: 60%;
-    background-color: #efefef;
+    background-color: white!important;
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 20px;
     margin: auto;
-    margin-bottom: 10px;
+    margin-top: -50px;
+    margin-bottom: 20px;
 }
 .contact-grid {
     display: grid;
