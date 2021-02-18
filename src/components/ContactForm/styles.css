@@ -43,7 +43,7 @@ input {
 }
 .input-disabled {
     background-color: #eeeeee;
-    color: #666666;
+    color: #666666!important;
 }
 textarea {
     font-family:Arial, Helvetica, sans-serif;
