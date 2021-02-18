@@ -59,9 +59,12 @@ textarea {
 }
 .contact-paper {
     width: 60%;
-    padding-top: 0px;
-    padding-bottom: 40px;
+    background-color: #efefef;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
     margin: auto;
+    margin-bottom: 10px;
 }
 .contact-grid {
     display: grid;

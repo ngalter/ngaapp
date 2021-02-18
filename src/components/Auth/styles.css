@@ -3,16 +3,12 @@
 }
 .log-box {
     display: block;
-    width: 250px;
+    width: 100px;
     padding-bottom: 300px;
     height: auto;
     margin: auto;
 }
-.log-btn {
-    display: inline;
-    width: 50px!important;
-    height: auto;
-}
+
 .auth-locate {
     margin-top: -60px;
 }
