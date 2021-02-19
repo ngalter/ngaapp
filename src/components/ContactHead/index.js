@@ -2,10 +2,8 @@ import React from "react";
 
 import "./styles.css"
   function ContactHead(props) {
-  return (<div>
-      <div className='contact-header'>{props.title}</div>
-      <div className='contact-header2'>{props.title2}</div>
-          
+    return (<div id={'contact'} className='c-header-wrapper'> 
+      <div className='contact-header'>{props.title}</div>     
       </div>  
     );
   }

@@ -5,7 +5,8 @@ import Banner from '../Banner';
 import Interest from '../Interest';
 import ProjectTable from '../ProjectTable';
 import ContactHead from '../ContactHead';
-import Auth from '../Auth';
+import ContactForm from '../ContactForm';
+// import Auth from '../Auth';
 
 import './styles.css'
 
@@ -16,8 +17,9 @@ function HomePage() {
     <About />
     <Interest />
     <ProjectTable />
-    <ContactHead />
-    <Auth />
+    <ContactHead title={'Contact'}/>
+    <ContactForm />
+    {/* <Auth /> */}
     </div>
     );
 }

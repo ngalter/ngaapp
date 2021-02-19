@@ -1,8 +1,9 @@
 .contact-wrapper {
+    background-color: gainsboro!important;
     width: 100%;
-    margin-top: 0px;
+    margin-top: -20px;
     padding-top: 60px;
-    padding-bottom: 0px;
+    padding-bottom: 200px;
 }
 .contact-input {
     padding: 10px;
@@ -34,7 +35,7 @@ form {
 input {
     width: 200px;
     font-size: 1.1em;
-    margin-bottom: 10px;
+    margin-bottom: 12px!important;
     padding: 8px;
     border-radius: 5px;
     background-color: white;
@@ -45,26 +46,25 @@ input {
     background-color: #eeeeee;
     color: #666666!important;
 }
+
 textarea {
     font-family:Arial, Helvetica, sans-serif;
     height: 200px;
     font-size: 1.1em;
-    width: 100%;
+    width: 80%;
     padding: 8px;
     border-radius: 5px;
-    margin-top: 2px;
     background-color:white;
     border: solid 1px #cccccc;
 }
 .contact-paper {
     width: 60%;
     background-color: white!important;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
     margin: auto;
-    margin-top: -30px;
-    margin-bottom: 20px;
 }
 .contact-grid {
     display: grid;
@@ -81,14 +81,19 @@ textarea {
 @media only screen and (max-width: 900px) {
     .contact-grid {
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 0px;
         grid-template-columns: 100%;
     }
     form {
-        width: 95%;
+        width: 100%;
     }
     .contact-paper {
-        width: 85%;
+        width: 90%;
+        background-color: white!important;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 10px;
+        padding-left: 10px;
         margin: auto;
     }
     textarea {

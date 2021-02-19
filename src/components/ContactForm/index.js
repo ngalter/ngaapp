@@ -50,7 +50,7 @@ function ContactForm(props) {
     setFormObject({
       fname: "",
       lname: "",
-      email: props.userEmail,
+      email: "",
       message: ""
     });
   }, []);
@@ -59,6 +59,7 @@ function ContactForm(props) {
     setFormObject({
       fname: "",
       lname: "",
+      email: "",
       message: ""
     });
   }
@@ -115,11 +116,10 @@ function ContactForm(props) {
           </label><br />
           <label>
           Email:<br />
-          <input className='input-disabled'
+          <input
             name="email"
             type="email"
             placeholder="Email"
-            disabled
             value={formObject.email}
             onChange={handleInputChange}
           />
