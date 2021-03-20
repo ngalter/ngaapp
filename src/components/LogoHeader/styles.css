@@ -1,0 +1,21 @@
+.contact-header {
+    font-weight: 700;
+    font-size: 1.4em;
+    color: #444444;
+    width: 100%;
+    margin-top: -60px!important;
+}
+.inner-box {
+    width: 70%;
+    margin: auto;
+}
+.head-box {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.head-img {
+    width: 28px;
+    height: 28px;
+}
+

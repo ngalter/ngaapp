@@ -2,12 +2,13 @@ import React from 'react';
 import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
 import data from '../data/projects.json';
+import LogoHeader from '../LogoHeader';
 import './styles.css'
 
   
 export default function ProjectTable() {
     return (<div id={'portfolio'} className='tbl-bkd'>
-        <div className='tbl-header'>Projects</div>
+        <LogoHeader header={'Projects'} />
         <Box className='tbl-wrapper'>
             <table>
             <tbody>
