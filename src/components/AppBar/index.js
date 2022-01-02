@@ -4,7 +4,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Link from '@material-ui/core/Link';
 import MenuDrawer from '../MenuDrawer';
-import logo from '../img/logo512.png';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -16,25 +15,20 @@ const useStyles = makeStyles(() => ({
       color: 'white',
       fontWeight: 700,
     fontSize: '22px',
-    marginTop: '-35px',
+    marginTop: '15px',
     paddingTop: '1px'
   },
   appbar: {
-    backgroundColor: 'white',
+    backgroundColor: 'rgba(0,0,0,.3)',
   },
-  img: {
-    marginTop: '17px',
-    width: '35px',
-    height: 'auto'
-  },
-  textDk: {
+  textFirst: {
     paddingLeft: '45px',
     fontFamily: 'Roboto;',
-    color: '#262261',
+    color: 'teal',
   },
-  textLt: {
+  textSecond: {
     fontFamily: 'Roboto;',
-    color: '#1b75bc',
+    color: 'steelblue',
   }
 }));
 
@@ -47,8 +41,7 @@ export default function ButtonAppBar() {
         <Toolbar >
         <MenuDrawer />
           <Link style={{ textDecoration: 'none' }} href={'#banner'}>
-            <img className={classes.img} src={logo} alt='tags' />
-            <p className={classes.title}><span className={classes.textDk}>NANCY</span><span className={classes.textLt}>ALTER</span></p>
+            <p className={classes.title}><span className={classes.textFirst}>NG</span><span className={classes.textSecond}>ALTER</span></p>
           </Link>
         </Toolbar>
       </AppBar>
