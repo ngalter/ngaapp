@@ -4,6 +4,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Link from '@material-ui/core/Link';
 import MenuDrawer from '../MenuDrawer';
+import MailIcon from '@material-ui/icons/Mail';
+
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -26,7 +28,11 @@ const useStyles = makeStyles(() => ({
   },
   textSecond: {
     color: 'lightBlue',
-  }
+  },
+  mailIcon: {
+    color: 'lightBlue',
+    paddingTop: '5px',
+ }
 }));
 
 export default function ButtonAppBar() {
@@ -34,11 +40,14 @@ export default function ButtonAppBar() {
 
   return (
     <div>
-      <AppBar position="fixed" className={classes.appbar} elevation={1}>
+      <AppBar position="static" className={classes.appbar} elevation={1}>
         <Toolbar >
-        <MenuDrawer />
+        <MenuDrawer edge="start"/>
           <Link style={{ textDecoration: 'none' }} href={'#banner'}>
-            <p className={classes.title}><span className={classes.textFirst}>NG</span><span className={classes.textSecond}>Alter</span></p>
+            <p className={classes.title}><span className={classes.textFirst}>Nancy</span><span className={classes.textSecond}>Alter</span></p>
+          </Link>
+          <Link edge="end" href={'#contact'}>
+            <MailIcon className={classes.mailIcon}/> 
           </Link>
         </Toolbar>
       </AppBar>
