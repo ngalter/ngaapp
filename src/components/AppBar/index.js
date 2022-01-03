@@ -12,8 +12,7 @@ const useStyles = makeStyles(() => ({
   title: {
     flexGrow: 1,
     fontFamily: 'Naste Light',
-      color: 'white',
-      fontWeight: 400,
+    color: 'white',
     fontSize: '22px',
     marginTop: '17px',
     paddingTop: '2px'
