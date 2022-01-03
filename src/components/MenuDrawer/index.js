@@ -23,8 +23,8 @@ const useStyles = makeStyles({
   fullList: {
     width: 'auto',
     },
-    btn: {
-      color: '#1b75bc',
+  btn: {
+    color: 'lightBlue',
     },
 });
 

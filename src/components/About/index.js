@@ -7,13 +7,8 @@ function About() {
   return (<div id={'about'} className='about-top'> 
     <div className='about-wrap'>
       <div className='about-box'> 
-        <div className='about-grid'> 
-          <div>
-            <img className='about-img' src={data.about.img} alt='tags' />  
-          </div>
           <div className='about-text'>
           <span className='about-head'>{data.about.header}</span><br />{data.about.text} 
-          </div>  
         </div>   
       </div>
     </div></div>

@@ -11,24 +11,22 @@ const useStyles = makeStyles(() => ({
   },
   title: {
     flexGrow: 1,
-    fontFamily: 'Roboto;',
+    fontFamily: 'Naste Light',
       color: 'white',
-      fontWeight: 700,
+      fontWeight: 400,
     fontSize: '22px',
-    marginTop: '15px',
-    paddingTop: '1px'
+    marginTop: '17px',
+    paddingTop: '2px'
   },
   appbar: {
-    backgroundColor: 'rgba(0,0,0,.3)',
+    backgroundColor: 'rgba(0,0,0,.8)',
   },
   textFirst: {
-    paddingLeft: '45px',
-    fontFamily: 'Roboto;',
-    color: 'teal',
+    paddingLeft: '5px',
+    color: 'lemonChiffon',
   },
   textSecond: {
-    fontFamily: 'Roboto;',
-    color: 'steelblue',
+    color: 'lightBlue',
   }
 }));
 
@@ -41,7 +39,7 @@ export default function ButtonAppBar() {
         <Toolbar >
         <MenuDrawer />
           <Link style={{ textDecoration: 'none' }} href={'#banner'}>
-            <p className={classes.title}><span className={classes.textFirst}>NG</span><span className={classes.textSecond}>ALTER</span></p>
+            <p className={classes.title}><span className={classes.textFirst}>NG</span><span className={classes.textSecond}>Alter</span></p>
           </Link>
         </Toolbar>
       </AppBar>
