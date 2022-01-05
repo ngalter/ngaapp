@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     width: 'auto',
     },
   btn: {
-    color: 'lightBlue',
+    color: 'white',
     },
 });
 
