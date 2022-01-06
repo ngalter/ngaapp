@@ -1,18 +1,30 @@
 .contact-wrapper {
-    background-color: #efefef!important;
+    position: relative;
+    /* background-color: #efefef!important; */
+    background: rgb(4,3,14);
+background: linear-gradient(139deg, rgba(4,3,14,1) 0%, rgba(79,79,164,1) 68%, rgba(98,79,60,1) 100%);
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 300px;
+    padding-top: 150px;
+    padding-bottom: 250px;
 }
-
-.head-img {
-    width: 28px;
-    height: 28px;
-
-    padding-top: 5px!important;
+.contact-paper {
+    background-color: white!important;
+    padding: 40px;
+    width: 80vw;
+    margin: auto;
 }
+.contact-header {
+    color: white;
+    font-family: 'Naste Light';
+    font-size: 1.4em;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    width: 80vw;
+    margin: auto;
+    text-align: left;
+    font-weight: 700;
+  }
 .contact-input {
-    padding: 10px;
     font-size: 1.3em;
     background-color: #f5f5f5;
     border: solid 1px #999999;
@@ -24,18 +36,11 @@
     padding: 10px;
     width: 30px;
 }
-.contact-img {
-    width: 100px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: auto;
-    border-radius: 300px;
-}
+
 form {
     font-family:Arial, Helvetica, sans-serif;
     color: #555555;
-    font-weight: 600;
-    width: 70%;
+    font-weight: 400;
     margin: auto;
 }
 input {
@@ -63,15 +68,7 @@ textarea {
     background-color:white;
     border: solid 1px #cccccc;
 }
-.contact-paper {
-    width: 60%;
-    background-color: white!important;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin: auto;
-}
+
 .contact-grid {
     display: grid;
     grid-gap: 40px;
@@ -81,13 +78,13 @@ textarea {
     color: #444444;
     font-size: 1.1em;
     font-weight: 400;
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 @media only screen and (max-width: 900px) {
     .contact-grid {
         display: grid;
-        grid-gap: 0px;
+        grid-gap: 40px;
         grid-template-columns: 100%;
     }
     form {
@@ -97,24 +94,19 @@ textarea {
         padding-bottom: 500px;
     }
     .contact-paper {
-        width: 85%;
         background-color: white!important;
         padding-top: 40px;
         padding-bottom: 40px;
-        padding-right: 10px;
-        padding-left: 10px;
-        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     textarea {
         margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 700px) {
-.contact-img {
-display: none;
-}
 textarea {
-width: 95%;
+width: 85%;
 }
 .contact-wrapper {
     padding-bottom: 250px;

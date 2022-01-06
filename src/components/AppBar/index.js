@@ -6,6 +6,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Link from '@material-ui/core/Link';
+import './styles.css'
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -17,11 +18,6 @@ const useStyles = makeStyles((theme) => ({
   inputRoot: {
     color: 'inherit',
   },
-  title: {
-    fontFamily: 'Naste Light',
-    color: 'white',
-    textDecorationLine: 'none',
-  },
 }));
 
 export default function AppBar2() {
@@ -32,7 +28,7 @@ export default function AppBar2() {
       <AppBar position="fixed">
         <Toolbar>
           <MenuDrawer className={classes.menuicon} />
-          <Link href="#banner" className={classes.title} variant="h6" >Nancy Alter</Link>
+          <Link href="#banner" className='title' variant="h6" >Nancy Alter</Link>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton href={'#contact'} color="inherit">

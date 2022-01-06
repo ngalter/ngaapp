@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
-import LogoHeader from '../LogoHeader';
 import $ from "jquery";
-import logo from '../img/logo512.png';
 import "./styles.css"
 
 const useStyles = makeStyles((theme) => ({
@@ -92,9 +90,10 @@ function ContactForm(props) {
   }
 
   return (<div div id={'contact'} className='contact-wrapper'>
-    
+      <div className='contact-header'>
+        Contact
+      </div> 
     <Paper className='contact-paper'>
-    <LogoHeader header={'Contact Us'} />
         <div id='feedback'>
         <form type="submit" method="post" id="feedback_form" action="https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback" > 
         {/* <img src='../img/about.jpg' alt='nga' className='contact-img' /><br />    */}
