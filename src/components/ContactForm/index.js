@@ -78,7 +78,7 @@ function ContactForm(props) {
       })
       .fail(function() {
         console.log('failed to register');
-        container.append("<h4>" + 'There was an error, please try again.' + "</h4>");
+        container.append("<h4> There was an error, please try again. </h4>");
         clearForm();
       });
   };
@@ -96,21 +96,19 @@ function ContactForm(props) {
     <Paper className='contact-paper'>
         <div id='feedback'>
         <form type="submit" method="post" id="feedback_form" action="https://fil1gnol3b.execute-api.us-east-1.amazonaws.com/Testing/feedback" > 
-        {/* <img src='../img/about.jpg' alt='nga' className='contact-img' /><br />    */}
-        <div className='contact-grid'>
-        <div>
+
         <label>
-          First Name:<br />
-          <input
+            <input
+            className="contact-input"
             name="fname"
             placeholder="First Name"
             value={formObject.fname}
             onChange={handleInputChange}
           />
-          </label><br />
+          </label>
           <label>
-          Last Name:<br />
           <input
+            className="contact-input"
             name="lname"
             placeholder="Last Name"
             value={formObject.lname}
@@ -118,8 +116,8 @@ function ContactForm(props) {
           />
           </label><br />
           <label>
-          Email:<br />
           <input
+            className="contact-input"
             name="email"
             type="email"
             placeholder="Email"
@@ -127,19 +125,15 @@ function ContactForm(props) {
             onChange={handleInputChange}
           />
           </label>
-        </div> 
-        <div>
+
         <label>
-          Your Message:<br />
-          <textarea
+          <textarea className="contact-input-message"
             name="message"
             placeholder="Your Message"
             value={formObject.message}
             onChange={handleInputChange}
           />
-          </label> 
-          </div>
-            </div>
+          </label><br />
             <Button className={classes.btn}
             variant='contained'
             type='submit'
