@@ -37,7 +37,7 @@ background: linear-gradient(139deg, rgba(4,3,14,1) 0%, rgba(79,79,164,1) 68%, rg
 }
 
 .contact-input-message {
-    width: 99%;
+    width: 100%;
     font-size: 1.3em;
     margin-bottom: 12px!important;
     padding: 8px;
