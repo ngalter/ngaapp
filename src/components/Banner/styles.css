@@ -34,14 +34,18 @@
   font-weight: 700;
   padding-right: 30px;
 }
-  .banner-container {
-       display: grid;
-       width: 100%;
-       height: auto;
-       grid-template-columns: 100%;
-     }
-     .banner-container > div {
-       color: white;
-       text-align: center;
-       margin: auto!important;
-     }
+.banner-about {
+  color: white;
+  font-family: 'Naste Light';
+  font-size: 1em;
+  padding-top: 10px;
+  padding-left: 45px;
+  text-align: left;
+  font-weight: 400;
+  width: 50%;
+}
+@media only screen and (max-width: 700px) {
+  .banner-about {
+    width: 70%;
+  }
+  }

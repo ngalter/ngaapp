@@ -3,8 +3,7 @@
     background: rgb(4,3,14);
 background: linear-gradient(139deg, rgba(4,3,14,1) 0%, rgba(79,79,164,1) 68%, rgba(98,79,60,1) 100%);
     width: 100%;
-    padding-top: 150px;
-    padding-bottom: 250px;
+    padding-top: 100px;
     height: 100vh;
 }
 .contact-paper {
@@ -79,11 +78,6 @@ textarea {
     margin: auto;
 }
 @media only screen and (max-width: 900px) {
-    .contact-grid {
-        display: grid;
-        grid-gap: 40px;
-        grid-template-columns: 100%;
-    }
     form {
         width: 100%;
     }
